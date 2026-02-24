@@ -27,9 +27,7 @@
 /* Ashfak Maumud */
 /* ============= */
 /* Common Start */
-.container {
-  @apply max-w-285 mx-auto px-3 lg:px-0;
-}
+
 .heading {
   @apply text-center border-b border-b-[#7451FD];
 }
