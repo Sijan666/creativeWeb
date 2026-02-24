@@ -6,6 +6,7 @@
     --font-roboto: "Roboto", sans-serif; 
     --spacing-container: 1140px; 
     --background-image-gradientNew: linear-gradient(90deg, #7F5CFF 0%, #4E95FF 100%);
+    --shadow-newShadow: 0 4px 60px 0 rgba(72, 103, 255, 0.8);
 }
 
 @utility text-brand {
