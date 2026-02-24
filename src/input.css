@@ -15,4 +15,96 @@
     color: transparent;
 }
 
+/* Ashfak Maumud */
+/* ============= */
+/* Common Start */
+.container {
+  @apply max-w-285 mx-auto px-3 lg:px-0;
+}
+.heading {
+  @apply text-center border-b border-b-[#7451FD];
+}
+.heading h3 {
+  @apply text-white lg:text-[56px] text-[40px] font-Inter font-extrabold leading-tight w-70 mx-auto md:w-208.75 lg:w-208.75;
+}
+.heading h3 span {
+  @apply italic bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent;
+}
+.heading p {
+  @apply lg:w-202.5 mx-auto text-[#A9B0B8] text-lg font-Roboto pt-4 px-2 lg:px-0;
+}
+/* Common End */
 
+/* Projects Part Start */
+#projectsPart {
+  @apply bg-[#050111] lg:pb-30 pb-10;
+}
+.projects {
+  @apply bg-[url(/images/projectsBG.png)] bg-no-repeat bg-cover bg-center lg:py-28.5 md:py-12 py-10;
+}
+.projectsHead {
+  @apply pb-8 mb-8;
+}
+.allProjects {
+  @apply grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-6;
+}
+.projectDetails {
+  @apply bg-[#050111] rounded-2xl border border-[#1A2130] p-4;
+}
+.projectDetailsImg {
+  @apply relative;
+}
+.projectDetailsImg img {
+  @apply w-full;
+}
+.projectDetailsImg span {
+  @apply absolute top-1/2 left-1/2 -translate-1/2 w-52.5 text-white text-[12px] font-Roboto bg-[#120B50CC] p-2.5;
+}
+.projectDetails h4 {
+  @apply text-white text-base font-Roboto font-semibold pt-4 pb-10;
+}
+.projectDetailsBtn {
+  @apply flex items-center gap-x-2;
+}
+.projectDetailsBtn button {
+  @apply text-[12px] font-Roboto rounded-sm cursor-pointer px-2 py-1;
+}
+.btnOne {
+  @apply text-[#F0C0FF] bg-[#6A3A7D];
+}
+.btnTwo {
+  @apply text-[#4891FF] bg-[#233981];
+}
+.btnThree {
+  @apply text-[#FF9697] bg-[#683D3E];
+}
+.btnFour {
+  @apply text-[#9387FF] bg-[#453576];
+}
+.btnFive {
+  @apply text-[#96FFA2] bg-[#3D6849];
+}
+.btnSix {
+  @apply text-[#FFC081] bg-[#7C523D];
+}
+.btnSeven {
+  @apply text-[#B8C1D4] bg-[#51555B];
+}
+.btnEight {
+  @apply text-[#FFF396] bg-[#68653D];
+}
+.btnNine {
+  @apply text-[#42C6FF] bg-[#265479];
+}
+.btnTen {
+  @apply text-[#96FFA2] bg-[#3D6849];
+}
+.btnEleven {
+  @apply text-[#FFFFFF] bg-[#68653D];
+}
+.btnTwelve {
+  @apply text-[#BEB3FF] bg-[#3A4683];
+}
+/* Projects Part End */
+/* ============= */
+/* Ashfak Maumud */
