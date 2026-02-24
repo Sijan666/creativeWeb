@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-inter: "Inter", sans-serif; 
+    --font-roboto: "Roboto", sans-serif; 
+    --spacing-container: 1140px; 
+    --background-image-gradientNew: linear-gradient(90deg, #7F5CFF 0%, #4E95FF 100%);
+}
+
+@utility text-brand {
+    background-image: var(--background-image-gradientNew);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
