@@ -268,6 +268,9 @@
   .w-\[390px\] {
     width: 390px;
   }
+  .w-full {
+    width: 100%;
+  }
   .max-w-container {
     max-width: var(--spacing-container);
   }
@@ -627,6 +630,11 @@
   .lg\:w-\[500px\] {
     @media (width >= 64rem) {
       width: 500px;
+    }
+  }
+  .lg\:w-\[510px\] {
+    @media (width >= 64rem) {
+      width: 510px;
     }
   }
   .lg\:w-\[760px\] {
