@@ -55,7 +55,7 @@
           <div class="lg:w-container px-4 mx-auto w-full">
             <div class="flex flex-row items-center gap-y-3 justify-between">
               <div class="flex sm:justify-center lg:justify-start">
-                <img src="images/logo.png" alt="logo.png" />
+                <img src="images/logo.png" alt="logo.png" class="lg:w-full w-[60%]"/>
               </div>
               <!-- Mobile icon -->
               <div
@@ -76,24 +76,19 @@
                   <li><a href="#">Blog</a></li>
                 </ul>
               </nav>
-              <div
-                class="bg-linear-to-r mt-4 lg:mt-0 mx-auto from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] hover:bg-none border hover:border-[#7451FD] duration-200 w-fit sm:mx-auto lg:mx-0 hidden lg:block"
-              >
-                <button
-                  class="text-white text-base font-semibold font-hind flex items-center gap-x-1 cursor-pointer"
-                >
-                  Get Enroll <i class="fa-solid fa-arrow-right-long"></i>
-                </button>
-              </div>
+              <button class="relative p-4 rounded-[10px] border border-[#7451FD] overflow-hidden group cursor-pointer hidden lg:block">
+                <span class="absolute inset-0 bg-gradientNew opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </span> <p class="relative z-10 font-medium font-roboto text-[18px] text-white">Get Enroll <i class="fa-solid fa-arrow-right-long"></i></p>
+              </button>
             </div>
             <!-- Mobile Device -->
             <div
-              class="absolute left-1/2 -translate-x-1/2 top-20 opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-out origin-top lg:hidden flex-col items-center text-center gap-y-3 py-6 mt-5 mx-auto rounded-xl bg-white/10 shadow-xl backdrop-blur-xl border border-white/20 w-[80%] justify-center"
+              class="absolute left-1/2 -translate-x-1/2 top-20 opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-out origin-top lg:hidden flex-col items-center text-center gap-y-3 py-6 mt-5 mx-auto rounded-xl bg-[#1D1E4F]/80 shadow-xl backdrop-blur-xl border border-white/20 w-full justify-center"
               id="mobile-menu"
             >
-              <nav class="sm:mx-auto lg:mx-0">
+              <nav class="sm:mx-auto lg:mx-0 ">
                 <ul
-                  class="flex flex-col sm:flex-col gap-x-10 lg:flex-row gap-y-4 text-white text-base font-semibold font-roboto lg:py-5"
+                  class="flex flex-col sm:flex-col gap-x-10 lg:flex-row gap-y-10 text-white text-base font-semibold font-roboto lg:py-5"
                 >
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
@@ -103,7 +98,7 @@
                 </ul>
               </nav>
               <div
-                class="bg-linear-to-r mt-4 lg:mt-0 mx-auto from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] border-2 border-white/50 duration-200 w-fit sm:mx-auto lg:mx-0"
+                class="bg-linear-to-r mt-6 lg:mt-0 mx-auto from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] border-2 border-white/50 duration-200 w-fit sm:mx-auto lg:mx-0"
               >
                 <button
                   class="text-white text-base font-semibold font-hind flex items-center gap-x-1 cursor-pointer"
@@ -166,7 +161,7 @@
               <!-- heading text -->
               <div class="pt-2">
                 <h1
-                  class="lg:text-[72px] text-[50px] text-white font-extrabold font-inter lg:w-151.75"
+                  class="lg:text-[72px] text-[35px] text-white font-extrabold font-inter lg:w-151.75 w-full text-center lg:text-left"
                 >
                   Title Will Be Here
                   <span class="text-brand italic">Web & Software</span>
@@ -375,42 +370,45 @@
 
     <!-- Promotion Video -->
     <section class="pt-15 pb-30 bg-[#050111]">
-      <!-- Container -->
       <div class="bg-[url('/images/pVideo.png')] bg-no-repeat bg-center">
         <div class="max-w-container mx-auto px-3">
-          <!-- Header -->
-          <h3
-            class="lg:text-[56px] text-[45px] font-extrabold text-center text-white leading-[130%]"
-          >
+          
+          <h3 class="lg:text-[56px] text-[35px] font-extrabold text-center text-white leading-[130%]">
             Here Will Be
-            <span
-              class="bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent italic"
-              >Promotion Video</span
-            >
+            <span class="bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent italic">
+              Promotion Video
+            </span>
           </h3>
-          <p
-            class="text-[#A9B0B8] lg:text-lg text-sm leading-[150%] text-center lg:w-202.5 w-97.5 mx-auto pt-4 pb-10"
-          >
+          <p class="text-[#A9B0B8] lg:text-lg text-sm leading-[150%] text-center lg:w-202.5 w-full mx-auto pt-4 pb-10">
             Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
             est at non suscipit. Felis posuere maecenas interdum sit cras.
             Egestas sed nunc sodales arcu mi ut volutpat lobortis.
           </p>
-          <!-- Header -->
-          <!-- Content -->
-          <div class="relative">
-            <img src="images/promotionalOne.png" class="mx-auto" alt="" />
-            <a href="https://youtu.be/l6shgiK9Z-k" target="_blank"
-              class="text-white font-extrabold lg:text-[56px] text-2xl w-full text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              Video Will Be Here
-            </a>
+
+          <div class="relative p-2 rounded-2xl bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] mx-auto w-fit">
+            
+            <div class="relative rounded-2xl overflow-hidden bg-[#050111]">
+              <img src="images/pv.png" class="mx-auto block" alt="Promotion Video" />
+              
+              <a href="https://www.youtube.com/watch?v=TD_N2VR3P1s" target="_blank"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-16 h-16 lg:w-20 lg:h-20"
+              >
+                <span class="absolute inline-flex h-full w-full rounded-full bg-white/70 animate-ping"></span>
+                <div class="relative z-10 w-full h-full bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:scale-105 transition-transform duration-300">
+                  <svg class="lg:w-15 lg:h-15 w-10 h-10 text-[#E50914] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            
           </div>
           <div class="flex flex-col lg:flex-row gap-y-5 justify-between mt-8">
             <div class="">
               <h5 class="text-white text-xl font-semibold">
                 Some text will be here
               </h5>
-              <p class="text-[#A9B0B8] text-sm leading-[150%] w-82">
+              <p class="text-[#A9B0B8] text-sm leading-[150%] lg:w-82 w-full">
                 Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                 ultricies eget amet faucibus diam. Dictum pharetra nisi donec
                 neque ut mauris nulla eros.
@@ -420,7 +418,7 @@
               <h5 class="text-white text-xl font-semibold">
                 Some text will be here
               </h5>
-              <p class="text-[#A9B0B8] text-sm leading-[150%] w-82">
+              <p class="text-[#A9B0B8] text-sm leading-[150%] lg:w-82 w-full">
                 Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                 ultricies eget amet faucibus diam. Dictum pharetra nisi donec
                 neque ut mauris nulla eros.
@@ -430,17 +428,16 @@
               <h5 class="text-white text-xl font-semibold">
                 Some text will be here
               </h5>
-              <p class="text-[#A9B0B8] text-sm leading-[150%] w-82">
+              <p class="text-[#A9B0B8] text-sm leading-[150%] lg:w-82 w-full">
                 Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
                 ultricies eget amet faucibus diam. Dictum pharetra nisi donec
                 neque ut mauris nulla eros.
               </p>
             </div>
           </div>
-          <!-- Content -->
+          
         </div>
       </div>
-      <!-- Container -->
     </section>
     <!-- Promotion Video -->
 
