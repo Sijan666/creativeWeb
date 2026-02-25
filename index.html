@@ -718,15 +718,13 @@
           </div>
 
           <div class="flex items-center justify-center">
-            <button
-              class="flex items-center py-4 px-4.25 bg-linear-to-l from-[#4E95FF] to-[#7F5CFF] rounded-[10px] cursor-pointer border border-[#7451FD] hover:from-transparent hover:to-transparent transition-all duration-500 space-x-2"
-            >
-              <p
-                class="font-roboto font-medium text-[18px] text-white leading-[120%]"
-              >
-                Load More
+            <button class="relative p-4 rounded-[10px] border border-[#7451FD] overflow-hidden group cursor-pointer">
+              <span
+                class="absolute inset-0 bg-gradientNew opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </span>
+              <p class="relative z-10 font-medium font-roboto text-[18px] text-white">
+                Load More<i class="fa-solid fa-angle-down text-white"></i>
               </p>
-              <i class="fa-solid fa-angle-down text-white"></i>
             </button>
           </div>
         </div>
