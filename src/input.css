@@ -32,13 +32,13 @@
   @apply text-center border-b border-b-[#7451FD];
 }
 .heading h3 {
-  @apply text-white lg:text-[56px] text-[40px] font-inter font-extrabold leading-tight w-70 mx-auto md:w-208.75 lg:w-208.75 capitalize;
+  @apply text-white lg:text-[56px] text-[35px] font-inter font-extrabold leading-tight w-70 mx-auto md:w-208.75 lg:w-208.75 capitalize;
 }
 .heading h3 span {
   @apply italic bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent;
 }
 .heading p {
-  @apply lg:w-202.5 mx-auto text-[#A9B0B8] text-lg font-roboto pt-4 px-2 lg:px-0;
+  @apply lg:w-202.5 mx-auto text-[#A9B0B8] lg:text-lg text-sm font-roboto pt-4 px-2 lg:px-0;
 }
 /* Common End */
 
