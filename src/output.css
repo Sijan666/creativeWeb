@@ -10,6 +10,7 @@
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-sm: 24rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
     --text-xs: 0.75rem;
@@ -485,6 +486,9 @@
   }
   .w-full\! {
     width: 100% !important;
+  }
+  .w-sm {
+    width: var(--container-sm);
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
@@ -1183,6 +1187,12 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
   }
   .text-\[12px\] {
     font-size: 12px;
