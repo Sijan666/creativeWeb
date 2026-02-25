@@ -21,27 +21,33 @@
     <!-- header part start -->
     <section>
       <header>
-        <div class="bg-[#050111] lg:py-4 py-8">
-          <div class="container">
-            <div
-              class="flex flex-col lg:flex-row items-center gap-y-3 lg:justify-between"
-            >
+        <div class="bg-[#050111] lg:py-4 pt-8">
+          <div class="lg:w-container px-4 mx-auto w-full">
+            <div class="flex flex-row items-center gap-y-3 justify-between">
               <div class="flex sm:justify-center lg:justify-start">
                 <img src="images/logo.png" alt="logo.png" />
               </div>
-              <nav class="sm:mx-auto lg:mx-0">
+              <!-- Mobile icon -->
+              <div
+                class="lg:hidden text-white lg:w-[40%] text-2xl relative"
+                id="menu-toggle"
+              >
+                <button><i class="fa-solid fa-bars-staggered"></i></button>
+              </div>
+              <!-- Mobile icon -->
+              <nav class="sm:mx-auto lg:mx-0 hidden lg:block">
                 <ul
-                  class="flex sm:flex-col gap-x-10 lg:flex-row gap-y-4 text-white text-base font-semibold font-roboto py-5 lg:py-0"
+                  class="flex flex-col sm:flex-col gap-x-10 lg:flex-row gap-y-4 text-white text-base font-semibold font-roboto lg:py-5 lg:py-0"
                 >
-                  <li><a href="#">Title</a></li>
-                  <li><a href="#">Title</a></li>
-                  <li><a href="#">Title</a></li>
-                  <li><a href="#">Title</a></li>
-                  <li><a href="#">Title</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </nav>
               <div
-                class="bg-linear-to-r from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] hover:bg-none border hover:border-[#7451FD] duration-200 w-fit sm:mx-auto lg:mx-0"
+                class="bg-linear-to-r mt-4 lg:mt-0 mx-auto from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] hover:bg-none border hover:border-[#7451FD] duration-200 w-fit sm:mx-auto lg:mx-0 hidden lg:block"
               >
                 <button
                   class="text-white text-base font-semibold font-hind flex items-center gap-x-1 cursor-pointer"
@@ -50,6 +56,41 @@
                 </button>
               </div>
             </div>
+            <!-- Mobile Device -->
+            <div
+              class="absolute right-1/2 translate-x-1/2 top-20 hidden lg:hidden flex-col items-center text-center gap-y-3 py-6 mt-5 mx-auto rounded-xl bg-white/10 shadow-xl backdrop-blur-xl border border-white/20 w-[80%] justify-center"
+              id="mobile-menu"
+            >
+              <nav class="sm:mx-auto lg:mx-0">
+                <ul
+                  class="flex flex-col sm:flex-col gap-x-10 lg:flex-row gap-y-4 text-white text-base font-semibold font-roboto lg:py-5"
+                >
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </nav>
+              <div
+                class="bg-linear-to-r mt-4 lg:mt-0 mx-auto from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] border-2 border-white/50 duration-200 w-fit sm:mx-auto lg:mx-0"
+              >
+                <button
+                  class="text-white text-base font-semibold font-hind flex items-center gap-x-1 cursor-pointer"
+                >
+                  Get Enroll <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Mobile Device -->
+            <!-- JS -->
+            <script>
+              document.getElementById("menu-toggle").onclick = function () {
+                const menu = document.getElementById("mobile-menu");
+                menu.classList.toggle("hidden");
+              };
+            </script>
+            <!-- JS -->
           </div>
         </div>
       </header>
