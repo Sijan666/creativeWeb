@@ -464,9 +464,6 @@
   .pt-167 {
     padding-top: calc(var(--spacing) * 167);
   }
-  .pt-\[167px\] {
-    padding-top: 167px;
-  }
   .pr-1 {
     padding-right: calc(var(--spacing) * 1);
   }
@@ -484,9 +481,6 @@
   }
   .pb-41\.5 {
     padding-bottom: calc(var(--spacing) * 41.5);
-  }
-  .pb-\[166px\] {
-    padding-bottom: 166px;
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
