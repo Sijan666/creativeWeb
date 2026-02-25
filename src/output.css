@@ -287,6 +287,15 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -302,11 +311,44 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
+  .h-62 {
+    height: calc(var(--spacing) * 62);
+  }
+  .h-62\.5 {
+    height: calc(var(--spacing) * 62.5);
+  }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
+  .h-\[250px\] {
+    height: 250px;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
+  }
+  .max-h-96 {
+    max-height: calc(var(--spacing) * 96);
+  }
+  .min-h-\[280px\] {
+    min-height: 280px;
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
   .w-48\.5 {
     width: calc(var(--spacing) * 48.5);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-54 {
+    width: calc(var(--spacing) * 54);
   }
   .w-54\.75 {
     width: calc(var(--spacing) * 54.75);
@@ -529,6 +571,12 @@
   }
   .bg-\[\#FFC081\] {
     background-color: #FFC081;
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-linear-to-l {
     --tw-gradient-position: to left;
