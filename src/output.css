@@ -34,10 +34,7 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --blur-lg: 16px;
     --blur-xl: 24px;
-    --blur-2xl: 40px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -319,9 +316,6 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
-  .mb-12 {
-    margin-bottom: calc(var(--spacing) * 12);
-  }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
   }
@@ -354,12 +348,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .max-h-0 {
-    max-height: calc(var(--spacing) * 0);
-  }
-  .max-h-96 {
-    max-height: calc(var(--spacing) * 96);
   }
   .min-h-\[280px\] {
     min-height: 280px;
@@ -451,14 +439,6 @@
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * 1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-1\/2 {
-    --tw-translate-x: calc(1 / 2 * 100%);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1 {
@@ -701,6 +681,15 @@
   .bg-\[\#FFC081\] {
     background-color: #FFC081;
   }
+  .bg-\[url\'\'\] {
+    background-color: url'';
+  }
+  .bg-\[url\'\(\)\'\] {
+    background-color: url'()';
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -740,6 +729,33 @@
   .bg-\[linear-gradient\(to_top_right\,\#35B1FF\,\#050111\,\#22c55e\)\] {
     background-image: linear-gradient(to top right,#35B1FF,#050111,#22c55e);
   }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'\.\/\'\)\] {
+    background-image: url('./');
+  }
+  .bg-\[url\(\'\.\/i\'\)\] {
+    background-image: url('./i');
+  }
+  .bg-\[url\(\'\.\/image\'\)\] {
+    background-image: url('./image');
+  }
+  .bg-\[url\(\'\.\/images\/\'\)\] {
+    background-image: url('./images/');
+  }
+  .bg-\[url\(\'\.\/images\/EDBImg\.png\'\)\] {
+    background-image: url('./images/EDBImg.png');
+  }
+  .bg-\[url\(\'\/\'\)\] {
+    background-image: url('/');
+  }
+  .bg-\[url\(\'\/images\/\'\)\] {
+    background-image: url('/images/');
+  }
+  .bg-\[url\(\'\/images\/EDBImg\.png\'\)\] {
+    background-image: url('/images/EDBImg.png');
+  }
   .bg-\[url\(\'\/images\/bannerBg\.png\'\)\] {
     background-image: url('/images/bannerBg.png');
   }
@@ -754,6 +770,12 @@
   }
   .bg-\[url\(\'\/images\/pVideo\.png\'\)\] {
     background-image: url('/images/pVideo.png');
+  }
+  .bg-\[url\(\'\/src\'\)\] {
+    background-image: url('/src');
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
   }
   .bg-gradientNew {
     background-image: var(--background-image-gradientNew);
@@ -862,6 +884,9 @@
   }
   .py-30 {
     padding-block: calc(var(--spacing) * 30);
+  }
+  .py-40 {
+    padding-block: calc(var(--spacing) * 40);
   }
   .py-\[50px\] {
     padding-block: 50px;
@@ -994,6 +1019,9 @@
   }
   .text-\[50px\] {
     font-size: 50px;
+  }
+  .text-\[56px\] {
+    font-size: 56px;
   }
   .leading-\[120\%\] {
     --tw-leading: 120%;
@@ -1368,6 +1396,11 @@
   .lg\:w-202\.25 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 202.25);
+    }
+  }
+  .lg\:w-260\.5 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 260.5);
     }
   }
   .lg\:w-350 {
