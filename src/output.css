@@ -407,6 +407,9 @@
   .w-95 {
     width: calc(var(--spacing) * 95);
   }
+  .w-97 {
+    width: calc(var(--spacing) * 97);
+  }
   .w-97\.5 {
     width: calc(var(--spacing) * 97.5);
   }
@@ -858,6 +861,9 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .py-12\.5 {
     padding-block: calc(var(--spacing) * 12.5);
