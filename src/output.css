@@ -34,6 +34,7 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --blur-xl: 24px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -232,12 +233,6 @@
   .-right-30 {
     right: calc(var(--spacing) * -30);
   }
-  .right-1 {
-    right: calc(var(--spacing) * 1);
-  }
-  .right-1\/2 {
-    right: calc(1 / 2 * 100%);
-  }
   .right-4 {
     right: calc(var(--spacing) * 4);
   }
@@ -432,6 +427,9 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .origin-top {
+    transform-origin: top;
   }
   .-translate-x-1 {
     --tw-translate-x: calc(var(--spacing) * -1);
@@ -681,15 +679,6 @@
   .bg-\[\#FFC081\] {
     background-color: #FFC081;
   }
-  .bg-\[url\'\'\] {
-    background-color: url'';
-  }
-  .bg-\[url\'\(\)\'\] {
-    background-color: url'()';
-  }
-  .bg-\[url\] {
-    background-color: url;
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -729,30 +718,6 @@
   .bg-\[linear-gradient\(to_top_right\,\#35B1FF\,\#050111\,\#22c55e\)\] {
     background-image: linear-gradient(to top right,#35B1FF,#050111,#22c55e);
   }
-  .bg-\[url\(\'\'\)\] {
-    background-image: url('');
-  }
-  .bg-\[url\(\'\.\/\'\)\] {
-    background-image: url('./');
-  }
-  .bg-\[url\(\'\.\/i\'\)\] {
-    background-image: url('./i');
-  }
-  .bg-\[url\(\'\.\/image\'\)\] {
-    background-image: url('./image');
-  }
-  .bg-\[url\(\'\.\/images\/\'\)\] {
-    background-image: url('./images/');
-  }
-  .bg-\[url\(\'\.\/images\/EDBImg\.png\'\)\] {
-    background-image: url('./images/EDBImg.png');
-  }
-  .bg-\[url\(\'\/\'\)\] {
-    background-image: url('/');
-  }
-  .bg-\[url\(\'\/images\/\'\)\] {
-    background-image: url('/images/');
-  }
   .bg-\[url\(\'\/images\/EDBImg\.png\'\)\] {
     background-image: url('/images/EDBImg.png');
   }
@@ -770,12 +735,6 @@
   }
   .bg-\[url\(\'\/images\/pVideo\.png\'\)\] {
     background-image: url('/images/pVideo.png');
-  }
-  .bg-\[url\(\'\/src\'\)\] {
-    background-image: url('/src');
-  }
-  .bg-\[url\(\)\] {
-    background-image: url();
   }
   .bg-gradientNew {
     background-image: var(--background-image-gradientNew);
@@ -1019,9 +978,6 @@
   }
   .text-\[50px\] {
     font-size: 50px;
-  }
-  .text-\[56px\] {
-    font-size: 56px;
   }
   .leading-\[120\%\] {
     --tw-leading: 120%;
