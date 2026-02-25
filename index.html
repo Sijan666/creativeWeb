@@ -85,10 +85,26 @@
             <!-- Mobile Device -->
             <!-- JS -->
             <script>
-              document.getElementById("menu-toggle").onclick = function () {
-                const menu = document.getElementById("mobile-menu");
-                menu.classList.toggle("hidden");
-              };
+              const toggleBtn = document.getElementById("menu-toggle");
+              const menu = document.getElementById("mobile-menu");
+
+              toggleBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+
+                menu.classList.toggle("opacity-0");
+                menu.classList.toggle("scale-95");
+                menu.classList.toggle("pointer-events-none");
+              });
+
+              document.addEventListener("click", function (e) {
+                if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
+                  menu.classList.add(
+                    "opacity-0",
+                    "scale-95",
+                    "pointer-events-none",
+                  );
+                }
+              });
             </script>
             <!-- JS -->
           </div>
