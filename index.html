@@ -51,27 +51,33 @@
     <!-- header part start -->
     <section>
       <header>
-        <div class="bg-[#050111] lg:py-4 py-8">
-          <div class="container">
-            <div
-              class="flex flex-col lg:flex-row items-center gap-y-3 lg:justify-between"
-            >
+        <div class="bg-[#050111] lg:py-4 pt-8">
+          <div class="lg:w-container px-4 mx-auto w-full">
+            <div class="flex flex-row items-center gap-y-3 justify-between">
               <div class="flex sm:justify-center lg:justify-start">
                 <img src="images/logo.png" alt="logo.png" />
               </div>
-              <nav class="sm:mx-auto lg:mx-0">
+              <!-- Mobile icon -->
+              <div
+                class="lg:hidden text-white lg:w-[40%] text-2xl relative"
+                id="menu-toggle"
+              >
+                <button><i class="fa-solid fa-bars-staggered"></i></button>
+              </div>
+              <!-- Mobile icon -->
+              <nav class="sm:mx-auto lg:mx-0 hidden lg:block">
                 <ul
-                  class="flex sm:flex-col gap-x-10 lg:flex-row gap-y-4 text-white text-base font-semibold font-roboto py-5 lg:py-0"
+                  class="flex flex-col sm:flex-col gap-x-10 lg:flex-row gap-y-4 text-white text-base font-semibold font-roboto lg:py-5 lg:py-0"
                 >
-                  <li><a href="#">Title</a></li>
-                  <li><a href="#">Title</a></li>
-                  <li><a href="#">Title</a></li>
-                  <li><a href="#">Title</a></li>
-                  <li><a href="#">Title</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </nav>
               <div
-                class="bg-linear-to-r from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] hover:bg-none border hover:border-[#7451FD] duration-200 w-fit sm:mx-auto lg:mx-0"
+                class="bg-linear-to-r mt-4 lg:mt-0 mx-auto from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] hover:bg-none border hover:border-[#7451FD] duration-200 w-fit sm:mx-auto lg:mx-0 hidden lg:block"
               >
                 <button
                   class="text-white text-base font-semibold font-hind flex items-center gap-x-1 cursor-pointer"
@@ -80,6 +86,57 @@
                 </button>
               </div>
             </div>
+            <!-- Mobile Device -->
+            <div
+              class="absolute left-1/2 -translate-x-1/2 top-20 opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-out origin-top lg:hidden flex-col items-center text-center gap-y-3 py-6 mt-5 mx-auto rounded-xl bg-white/10 shadow-xl backdrop-blur-xl border border-white/20 w-[80%] justify-center"
+              id="mobile-menu"
+            >
+              <nav class="sm:mx-auto lg:mx-0">
+                <ul
+                  class="flex flex-col sm:flex-col gap-x-10 lg:flex-row gap-y-4 text-white text-base font-semibold font-roboto lg:py-5"
+                >
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </nav>
+              <div
+                class="bg-linear-to-r mt-4 lg:mt-0 mx-auto from-[#9d50bb] to-[#6e72fc] cursor-pointer py-2.5 px-4 rounded-[10px] border-2 border-white/50 duration-200 w-fit sm:mx-auto lg:mx-0"
+              >
+                <button
+                  class="text-white text-base font-semibold font-hind flex items-center gap-x-1 cursor-pointer"
+                >
+                  Get Enroll <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Mobile Device -->
+            <!-- JS -->
+            <script>
+              const toggleBtn = document.getElementById("menu-toggle");
+              const menu = document.getElementById("mobile-menu");
+
+              toggleBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+
+                menu.classList.toggle("opacity-0");
+                menu.classList.toggle("scale-95");
+                menu.classList.toggle("pointer-events-none");
+              });
+
+              document.addEventListener("click", function (e) {
+                if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
+                  menu.classList.add(
+                    "opacity-0",
+                    "scale-95",
+                    "pointer-events-none",
+                  );
+                }
+              });
+            </script>
+            <!-- JS -->
           </div>
         </div>
       </header>
@@ -387,13 +444,12 @@
     </section>
     <!-- Promotion Video -->
 
-    <!-- Course Module Part Start Here -->
+    <!-- course module -->
     <section class="bg-[#050111]">
       <div
         class="bg-[url('/images/coursemodulBg.png')] bg-no-repeat bg-center bg-cover pt-26.25 pb-32.5"
       >
         <div class="lg:w-container w-full mx-auto px-4 lg:px-0">
-          <!--Course Module Heading Start -->
           <div class="text-center">
             <h2
               class="font-inter font-extrabold lg:text-[56px] text-[45px] text-white leading-[120%] pb-4 capitalize"
@@ -412,36 +468,29 @@
               Egestas sed nunc sodales arcu mi ut volutpat lobortis.
             </p>
           </div>
-          <!--Course Module Heading End -->
           <div class="my-8 grid lg:grid-cols-2 gap-6">
-            <!-- Left Part Start -->
             <div class="space-y-6">
               <div
-                class="p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130]"
+                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
               >
                 <div class="flex gap-2 mb-2">
                   <div class="bg-[#FBFF8D] p-1 rounded-[5px]">
                     <img
-                      class=""
                       src="/images/courseModuleElement.png"
                       alt="courseModuleElement"
                     />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <div class="">
-                      <h5
-                        class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                      >
-                        Module title will be here
-                      </h5>
-                    </div>
-                    <div class="">
-                      <i class="fa-solid fa-angle-up text-[#A9B0B8]"></i>
-                    </div>
+                    <h5
+                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
+                    >
+                      Module title will be here
+                    </h5>
+                    <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
                 <p
-                  class="font-roboto font-normal text-sm text-white leading-[150%]"
+                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
                 >
                   Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
                   adipiscing sed mauris sapien. Lacus tempus nec sit nec
@@ -451,111 +500,28 @@
                   nisl faucibus mattis est et.
                 </p>
               </div>
+
               <div
-                class="p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130]"
+                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
               >
                 <div class="flex gap-2 mb-2">
                   <div class="bg-[#EDB5FF] p-1 rounded-[5px]">
                     <img
-                      class=""
                       src="/images/courseModuleElement.png"
                       alt="courseModuleElement"
                     />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <div class="">
-                      <h5
-                        class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                      >
-                        Module title will be here
-                      </h5>
-                    </div>
-                    <div class="">
-                      <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130]"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#7DD8FF] p-1 rounded-[5px]">
-                    <img
-                      class=""
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
-                  </div>
-                  <div class="flex items-center justify-between w-full">
-                    <div class="">
-                      <h5
-                        class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                      >
-                        Module title will be here
-                      </h5>
-                    </div>
-                    <div class="">
-                      <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130]"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#A5D0B4] p-1 rounded-[5px]">
-                    <img
-                      class=""
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
-                  </div>
-                  <div class="flex items-center justify-between w-full">
-                    <div class="">
-                      <h5
-                        class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                      >
-                        Module title will be here
-                      </h5>
-                    </div>
-                    <div class="">
-                      <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Left Part End -->
-            <!-- Right Part Start -->
-            <div class="space-y-6">
-              <div
-                class="p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130]"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#96FFA2] p-1 rounded-[5px]">
-                    <img
-                      class=""
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
-                  </div>
-                  <div class="flex items-center justify-between w-full">
-                    <div class="">
-                      <h5
-                        class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                      >
-                        Module title will be here
-                      </h5>
-                    </div>
-                    <div class="">
-                      <i class="fa-solid fa-angle-up text-[#A9B0B8]"></i>
-                    </div>
+                    <h5
+                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
+                    >
+                      Module title will be here
+                    </h5>
+                    <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
                 <p
-                  class="font-roboto font-normal text-sm text-white leading-[150%]"
+                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
                 >
                   Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
                   adipiscing sed mauris sapien. Lacus tempus nec sit nec
@@ -565,85 +531,196 @@
                   nisl faucibus mattis est et.
                 </p>
               </div>
+
               <div
-                class="p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130]"
+                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
+              >
+                <div class="flex gap-2 mb-2">
+                  <div class="bg-[#7DD8FF] p-1 rounded-[5px]">
+                    <img
+                      src="/images/courseModuleElement.png"
+                      alt="courseModuleElement"
+                    />
+                  </div>
+                  <div class="flex items-center justify-between w-full">
+                    <h5
+                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
+                    >
+                      Module title will be here
+                    </h5>
+                    <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
+                  </div>
+                </div>
+                <p
+                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
+                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
+                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
+                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
+                  nisl faucibus mattis est et.
+                </p>
+              </div>
+
+              <div
+                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
+              >
+                <div class="flex gap-2 mb-2">
+                  <div class="bg-[#A5D0B4] p-1 rounded-[5px]">
+                    <img
+                      src="/images/courseModuleElement.png"
+                      alt="courseModuleElement"
+                    />
+                  </div>
+                  <div class="flex items-center justify-between w-full">
+                    <h5
+                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
+                    >
+                      Module title will be here
+                    </h5>
+                    <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
+                  </div>
+                </div>
+                <p
+                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
+                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
+                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
+                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
+                  nisl faucibus mattis est et.
+                </p>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div
+                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
+              >
+                <div class="flex gap-2 mb-2">
+                  <div class="bg-[#96FFA2] p-1 rounded-[5px]">
+                    <img
+                      src="/images/courseModuleElement.png"
+                      alt="courseModuleElement"
+                    />
+                  </div>
+                  <div class="flex items-center justify-between w-full">
+                    <h5
+                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
+                    >
+                      Module title will be here
+                    </h5>
+                    <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
+                  </div>
+                </div>
+                <p
+                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
+                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
+                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
+                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
+                  nisl faucibus mattis est et.
+                </p>
+              </div>
+
+              <div
+                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
               >
                 <div class="flex gap-2 mb-2">
                   <div class="bg-[#FFC081] p-1 rounded-[5px]">
                     <img
-                      class=""
                       src="/images/courseModuleElement.png"
                       alt="courseModuleElement"
                     />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <div class="">
-                      <h5
-                        class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                      >
-                        Module title will be here
-                      </h5>
-                    </div>
-                    <div class="">
-                      <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
-                    </div>
+                    <h5
+                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
+                    >
+                      Module title will be here
+                    </h5>
+                    <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
+                <p
+                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
+                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
+                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
+                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
+                  nisl faucibus mattis est et.
+                </p>
               </div>
+
               <div
-                class="p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130]"
+                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
               >
                 <div class="flex gap-2 mb-2">
                   <div class="bg-[#ABBED0] p-1 rounded-[5px]">
                     <img
-                      class=""
                       src="/images/courseModuleElement.png"
                       alt="courseModuleElement"
                     />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <div class="">
-                      <h5
-                        class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                      >
-                        Module title will be here
-                      </h5>
-                    </div>
-                    <div class="">
-                      <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
-                    </div>
+                    <h5
+                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
+                    >
+                      Module title will be here
+                    </h5>
+                    <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
+                <p
+                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
+                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
+                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
+                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
+                  nisl faucibus mattis est et.
+                </p>
               </div>
+
               <div
-                class="p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130]"
+                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
               >
                 <div class="flex gap-2 mb-2">
                   <div class="bg-[#F68787] p-1 rounded-[5px]">
                     <img
-                      class=""
                       src="/images/courseModuleElement.png"
                       alt="courseModuleElement"
                     />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <div class="">
-                      <h5
-                        class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                      >
-                        Module title will be here
-                      </h5>
-                    </div>
-                    <div class="">
-                      <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
-                    </div>
+                    <h5
+                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
+                    >
+                      Module title will be here
+                    </h5>
+                    <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
+                <p
+                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
+                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
+                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
+                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
+                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
+                  nisl faucibus mattis est et.
+                </p>
               </div>
             </div>
-            <!-- Right Part End -->
           </div>
-          <!-- Button Start -->
+
           <div class="flex items-center justify-center">
             <button
               class="flex items-center py-4 px-4.25 bg-linear-to-l from-[#4E95FF] to-[#7F5CFF] rounded-[10px] cursor-pointer border border-[#7451FD] hover:from-transparent hover:to-transparent transition-all duration-500 space-x-2"
@@ -656,11 +733,10 @@
               <i class="fa-solid fa-angle-down text-white"></i>
             </button>
           </div>
-          <!-- Button End -->
         </div>
       </div>
     </section>
-    <!-- Course Module Part End Here -->
+    <!-- course module -->
 
     <!-- Bonus Track Part Start Here -->
     <section class="bg-[#050111]">
@@ -983,6 +1059,125 @@
     </section>
     <!-- Roadmap Part End -->
 
+    <!--Our Students & Stories Part start-->
+    <section class="py-25 bg-[#050111] px-4 lg:px-10">
+      <div class="text-center mb-16">
+        <h2
+          class="text-white text-[40px] lg:text-[56px] font-extrabold font-Inter"
+        >
+          Our Students
+          <span
+            class="bg-linear-to-r from-[#7F5CFF] to-[#4E95FF] bg-clip-text text-transparent"
+            >Shared their Stories</span
+          >
+        </h2>
+        <p class="text-[#A9B0B8] font-Roboto text-lg max-w-2xl mx-auto mt-4">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
+          at non suscipit.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-6 lg:w-350 mx-auto">
+        <!-- One -->
+        <div
+          class="bg-[#FDF5E6] flex items-stretch rounded-3xl overflow-hidden p-3 h-70"
+        >
+          <div class="w-[40%]">
+            <img
+              src="images/Rafi.png"
+              alt="Rafi"
+              class="w-full h-full object-cover rounded-[18px]"
+            />
+          </div>
+          <div class="w-[60%] pl-4 flex flex-col justify-center py-2">
+            <div class="flex items-center gap-1 mb-2">
+              <span class="font-bold text-lg">5.0</span>
+              <div class="text-[#FF9B03] flex text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-[#38435C] text-[13px] leading-relaxed mb-4">
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+              neque ut mauris nulla eros.
+            </p>
+            <h5 class="text-[18px] font-bold text-[#050111]">Mesbaul Haque</h5>
+            <p class="text-[12px] text-[#38435C] font-medium">
+              Batch - FDR 2504
+            </p>
+          </div>
+        </div>
+        <!-- One -->
+        <!-- Two -->
+        <div
+          class="bg-[#EFF8F2] flex items-stretch rounded-[24px] overflow-hidden p-3 min-h-[280px]"
+        >
+          <div class="w-[40%]">
+            <img
+              src="images/majharul.jpg"
+              alt="Maisha"
+              class="w-full h-full object-cover rounded-[18px]"
+            />
+          </div>
+          <div class="w-[60%] pl-4 flex flex-col justify-center py-2">
+            <div class="flex items-center gap-1 mb-2">
+              <span class="font-bold text-lg">5.0</span>
+              <div class="text-[#FF9B03] flex text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-[#38435C] text-[13px] leading-relaxed mb-4">
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+              neque ut mauris nulla eros.
+            </p>
+            <h5 class="text-[18px] font-bold text-[#050111]">Majharul Islam</h5>
+            <p class="text-[12px] text-[#38435C] font-medium">
+              Batch - FDR 2504
+            </p>
+          </div>
+        </div>
+        <!-- Two -->
+        <!-- Three -->
+        <div
+          class="bg-white flex items-stretch rounded-3xl overflow-hidden p-3 lg:h-70"
+        >
+          <div class="w-[40%]">
+            <img
+              src="images/Shoumen Biswas.jpg"
+              alt="Shoumen"
+              class="h-62.5 w-50 lg:w-full lg:h-full object-cover rounded-[18px]"
+            />
+          </div>
+          <div class="w-[60%] pl-4 flex flex-col justify-center py-2">
+            <div class="flex items-center gap-1 mb-2">
+              <span class="font-bold text-lg">5.0</span>
+              <div class="text-[#FF9B03] flex text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-[#38435C] text-[13px] leading-relaxed mb-4">
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+              neque ut mauris nulla eros.
+            </p>
+            <h5 class="text-[18px] font-bold text-[#050111]">Shoumen Biswas</h5>
+            <p class="text-[12px] text-[#38435C] font-medium">
+              Batch - FDR 2504
+            </p>
+          </div>
+        </div>
+        <!-- Three -->
+      </div>
+    </section>
+    <!-- Our Students & Stories Part  -->
+
     <!-- start career start -->
     <section id="startCareer">
       <div class="bg-[#080414] py-30 relative">
@@ -1153,6 +1348,20 @@
     </section>
     <!-- start career end -->
 
+    <!-- Development Banner Part -->
+    <section class="">
+      <div
+        class="bg-[url('/images/EDBImg.png')] py-40 bg-center bg-cover bg-no-repeat"
+      >
+        <h3
+          class="lg:text-[56px] text-[36px] text-center font-extrabold font-Inter text-white mx-auto w-full lg:w-260.5"
+        >
+          Eye Catchy Web Development Banner
+        </h3>
+      </div>
+    </section>
+    <!-- Development Banner Part -->
+
     <!-- Faq part -->
     <section class="lg:py-[120px] py-[50px] relative bg-[#050111]">
       <!-- Container -->
@@ -1203,7 +1412,6 @@
                 eu est at non suscipit. Felis posuere maecenas interdum sit
                 cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
               </p>
-
               <i
                 class="fa-solid fa-minus absolute lg:top-1 top-3 right-4 text-2xl text-transparent bg-clip-text bg-linear-to-r from-[#4E95FF] to-[#7F5CFF]"
               ></i>
@@ -1357,7 +1565,7 @@
               class="flex flex-col lg:flex-row items-center md:justify-center lg:justify-between gap-y-5 lg:gap-y-0 mt-10 lg:my-16"
             >
               <!-- Head Office - Main Campus  -->
-              <div class="sm:text-center">
+              <div class="text-center">
                 <h4 class="text-[#A9B0B8] text-base font-semibold font-roboto">
                   <i class="fa-solid fa-location-dot text-[#7451FD]"></i> Head
                   Office - Main Campus
@@ -1370,7 +1578,7 @@
                 </p>
               </div>
               <!-- Campus 02 - Dhanmondi  -->
-              <div class="sm:text-center">
+              <div class="text-center">
                 <h4 class="text-[#A9B0B8] text-base font-semibold font-roboto">
                   <i class="fa-solid fa-location-dot text-[#7451FD]"></i> Campus
                   02 - Dhanmondi
@@ -1382,7 +1590,7 @@
                 </p>
               </div>
               <!-- Mirpur Branch  -->
-              <div class="sm:text-center">
+              <div class="text-center">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1401,7 +1609,7 @@
               class="flex flex-col lg:flex-row gap-13.75 gap-y-5 mt-5 lg:mt-0 items-center"
             >
               <!-- Uttara Branch  -->
-              <div class="sm:text-center">
+              <div class="text-center">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1416,7 +1624,7 @@
                 </p>
               </div>
               <!-- Chattogram Branch  -->
-              <div class="sm:text-center">
+              <div class="text-center">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1431,7 +1639,7 @@
                 </p>
               </div>
               <!-- Panchagarh Branch  -->
-              <div class="sm:text-center">
+              <div class="text-center">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1445,7 +1653,7 @@
                 </p>
               </div>
               <!-- Canada Branch  -->
-              <div class="sm:text-center">
+              <div class="text-center">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1467,6 +1675,7 @@
     <!-- footer part end -->
 
     <!-- js file start -->
+    <script src="src/script.js"></script>
     <!-- js file end -->
   </body>
 </html>
