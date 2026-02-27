@@ -12,39 +12,10 @@
       rel="stylesheet"
     />
     <!-- google font end -->
-    <!-- common css and js -->
+    <!-- common css and -->
     <link rel="stylesheet" href="src/all.min.css" />
     <link rel="stylesheet" href="src/output.css" />
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const faqWrappers = document.querySelectorAll(
-          ".relative.rounded-2xl.p-\\[2px\\]",
-        );
-        faqWrappers.forEach((wrapper) => {
-          const content = wrapper.querySelector("p");
-          const icon = wrapper.querySelector("i");
-          const clickArea = wrapper.querySelector(".cursor-pointer");
-          content.style.display = "none";
-          icon.className =
-            "fa-solid fa-plus absolute lg:top-6 top-3 right-7 text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#4E95FF] to-[#7F5CFF]";
-          clickArea.addEventListener("click", () => {
-            const isOpen = content.style.display === "block";
-            if (isOpen) {
-              content.style.display = "none";
-              icon.classList.replace("fa-minus", "fa-plus");
-              wrapper.style.background = "none";
-              wrapper.style.backgroundColor = "#1F1E33";
-            } else {
-              content.style.display = "block";
-              icon.classList.replace("fa-plus", "fa-minus");
-              wrapper.style.background =
-                "linear-gradient(90deg, #4E95FF 0%, #7F5CFF 100%)";
-            }
-          });
-        });
-      });
-    </script>
-    <!-- common css and js -->
+    <!-- common css and -->
   </head>
   <body>
     <!-- header part start -->
@@ -107,30 +78,6 @@
               </div>
             </div>
             <!-- Mobile Device -->
-            <!-- JS -->
-            <script>
-              const toggleBtn = document.getElementById("menu-toggle");
-              const menu = document.getElementById("mobile-menu");
-
-              toggleBtn.addEventListener("click", function (e) {
-                e.stopPropagation();
-
-                menu.classList.toggle("opacity-0");
-                menu.classList.toggle("scale-95");
-                menu.classList.toggle("pointer-events-none");
-              });
-
-              document.addEventListener("click", function (e) {
-                if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
-                  menu.classList.add(
-                    "opacity-0",
-                    "scale-95",
-                    "pointer-events-none",
-                  );
-                }
-              });
-            </script>
-            <!-- JS -->
           </div>
         </div>
       </header>
