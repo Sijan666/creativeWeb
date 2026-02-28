@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const clickArea = wrapper.querySelector(".cursor-pointer");
     content.style.display = "none";
     icon.className =
-        "fa-solid fa-plus absolute lg:top-6 top-3 right-7 text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#4E95FF] to-[#7F5CFF]";
+        "fa-solid fa-plus absolute lg:top-6 top-6 right-5 lg:text-2xl text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#4E95FF] to-[#7F5CFF]";
     clickArea.addEventListener("click", () => {
         const isOpen = content.style.display === "block";
         if (isOpen) {
