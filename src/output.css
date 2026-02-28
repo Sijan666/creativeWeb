@@ -401,8 +401,14 @@
   .min-h-70 {
     min-height: calc(var(--spacing) * 70);
   }
+  .min-h-75 {
+    min-height: calc(var(--spacing) * 75);
+  }
   .min-h-\[280px\] {
     min-height: 280px;
+  }
+  .min-h-\[300px\] {
+    min-height: 300px;
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -1017,6 +1023,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .py-25 {
     padding-block: calc(var(--spacing) * 25);
   }
@@ -1432,9 +1441,29 @@
       height: calc(var(--spacing) * 12);
     }
   }
+  .sm\:min-h-70 {
+    @media (width >= 40rem) {
+      min-height: calc(var(--spacing) * 70);
+    }
+  }
+  .sm\:min-h-\[280px\] {
+    @media (width >= 40rem) {
+      min-height: 280px;
+    }
+  }
   .sm\:w-5\/12 {
     @media (width >= 40rem) {
       width: calc(5 / 12 * 100%);
+    }
+  }
+  .sm\:w-\[40\%\] {
+    @media (width >= 40rem) {
+      width: 40%;
+    }
+  }
+  .sm\:w-\[60\%\] {
+    @media (width >= 40rem) {
+      width: 60%;
     }
   }
   .sm\:flex-col {
@@ -1455,6 +1484,11 @@
   .sm\:px-6 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:py-2 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 2);
     }
   }
   .sm\:text-center {
@@ -1572,6 +1606,11 @@
   .lg\:mt-0 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:mb-16 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 16);
     }
   }
   .lg\:ml-0 {
