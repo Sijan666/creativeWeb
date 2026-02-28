@@ -12,47 +12,17 @@
       rel="stylesheet"
     />
     <!-- google font end -->
-    <!-- common css -->
+    <!-- common css and -->
     <link rel="stylesheet" href="src/all.min.css" />
     <link rel="stylesheet" href="src/output.css" />
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const faqWrappers = document.querySelectorAll(
-          ".relative.rounded-2xl.p-\\[2px\\]",
-        );
-        faqWrappers.forEach((wrapper) => {
-          const content = wrapper.querySelector("p");
-          const icon = wrapper.querySelector("i");
-          const clickArea = wrapper.querySelector(".cursor-pointer");
-          content.style.display = "none";
-          icon.className =
-            "fa-solid fa-plus absolute lg:top-6 top-3 right-7 text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#4E95FF] to-[#7F5CFF]";
-          clickArea.addEventListener("click", () => {
-            const isOpen = content.style.display === "block";
-            if (isOpen) {
-              content.style.display = "none";
-              icon.classList.replace("fa-minus", "fa-plus");
-              wrapper.style.background = "none";
-              wrapper.style.backgroundColor = "#1F1E33";
-            } else {
-              content.style.display = "block";
-              icon.classList.replace("fa-plus", "fa-minus");
-              wrapper.style.background =
-                "linear-gradient(90deg, #4E95FF 0%, #7F5CFF 100%)";
-            }
-          });
-        });
-      });
-    </script>
-
-    <!-- common css -->
+    <!-- common css and -->
   </head>
   <body>
     <!-- header part start -->
     <section>
       <header>
-        <div class="bg-[#050111] lg:py-4 pt-8">
-          <div class="lg:w-container px-4 mx-auto w-full">
+        <div class="bg-[#050111] lg:py-4 py-6 ">
+          <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-row items-center gap-y-3 justify-between">
               <div class="flex sm:justify-center lg:justify-start">
                 <img src="images/logo.png" alt="logo.png" class="lg:w-full w-[60%]"/>
@@ -83,7 +53,7 @@
             </div>
             <!-- Mobile Device -->
             <div
-              class="absolute left-1/2 -translate-x-1/2 top-20 opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-out origin-top lg:hidden flex-col items-center text-center gap-y-3 py-6 mt-5 mx-auto rounded-xl bg-[#1D1E4F]/80 shadow-xl backdrop-blur-xl border border-white/20 w-full justify-center"
+              class="absolute left-1/2 -translate-x-1/2 top-20 opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-out origin-top lg:hidden flex-col items-center text-center gap-y-3 py-6 mt-5 mx-auto rounded-xl bg-[#1D1E4F]/80 shadow-xl backdrop-blur-xl border border-white/20 w-full justify-center z-99 lg:z-0"
               id="mobile-menu"
             >
               <nav class="sm:mx-auto lg:mx-0 ">
@@ -108,30 +78,6 @@
               </div>
             </div>
             <!-- Mobile Device -->
-            <!-- JS -->
-            <script>
-              const toggleBtn = document.getElementById("menu-toggle");
-              const menu = document.getElementById("mobile-menu");
-
-              toggleBtn.addEventListener("click", function (e) {
-                e.stopPropagation();
-
-                menu.classList.toggle("opacity-0");
-                menu.classList.toggle("scale-95");
-                menu.classList.toggle("pointer-events-none");
-              });
-
-              document.addEventListener("click", function (e) {
-                if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
-                  menu.classList.add(
-                    "opacity-0",
-                    "scale-95",
-                    "pointer-events-none",
-                  );
-                }
-              });
-            </script>
-            <!-- JS -->
           </div>
         </div>
       </header>
@@ -171,7 +117,7 @@
               <!-- small badge -->
               <div class="pt-5">
                 <div
-                  class="flex gap-x-4 items-center justify-center lg:justify-normal"
+                  class="flex flex-wrap lg:flex-nowrap gap-x-5 gap-y-5 items-center justify-center lg:justify-normal"
                 >
                   <div
                     class="py-2 px-3 bg-[#634071] border border-[#EDB5FF] rounded-[10px]"
@@ -221,7 +167,7 @@
                     >
                     </span>
                     <p
-                      class="relative z-10 font-medium font-roboto text-[18px] text-white"
+                      class="relative z-5 font-medium font-roboto text-[18px] text-white"
                     >
                       Download Curriculum<i
                         class="fa-solid fa-download ml-2"
@@ -236,7 +182,7 @@
                     >
                     </span>
                     <p
-                      class="relative z-10 font-medium font-roboto text-[18px] text-white"
+                      class="relative z-5 font-medium font-roboto text-[18px] text-white"
                     >
                       CTA Label Here<i class="fa-solid fa-crown ml-2"></i>
                     </p>
@@ -249,10 +195,10 @@
             <div class="right">
               <!-- input field -->
               <div
-                class="relative p-0.75 lg:w-115.25 rounded-[10px] overflow-hidden group shadow-newShadow"
+                class="relative p-0.75 w-full rounded-[10px] overflow-hidden  shadow-newShadow"
               >
                 <div
-                  class="absolute inset-0 bg-[linear-gradient(to_top_right,#35B1FF,#050111,#22c55e)]"
+                  class="absolute inset-0 linearInput"
                 ></div>
                 <div class="relative bg-[#050111] rounded-[9px] p-6 z-10">
                   <div class="text text-white pb-8">
@@ -449,7 +395,7 @@
         <div class="lg:w-container w-full mx-auto px-4 lg:px-0">
           <div class="text-center">
             <h2
-              class="font-inter font-extrabold lg:text-[56px] text-[45px] text-white leading-[120%] pb-4 capitalize"
+              class="font-inter font-extrabold lg:text-[56px] text-[35px] text-white leading-[120%] pb-4 capitalize"
             >
               Here will be
               <span
@@ -719,15 +665,13 @@
           </div>
 
           <div class="flex items-center justify-center">
-            <button
-              class="flex items-center py-4 px-4.25 bg-linear-to-l from-[#4E95FF] to-[#7F5CFF] rounded-[10px] cursor-pointer border border-[#7451FD] hover:from-transparent hover:to-transparent transition-all duration-500 space-x-2"
-            >
-              <p
-                class="font-roboto font-medium text-[18px] text-white leading-[120%]"
-              >
-                Load More
+            <button class="relative p-4 rounded-[10px] border border-[#7451FD] overflow-hidden group cursor-pointer">
+              <span
+                class="absolute inset-0 bg-gradientNew opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </span>
+              <p class="relative z-10 font-medium font-roboto text-[18px] text-white">
+                Load More<i class="fa-solid fa-angle-down text-white"></i>
               </p>
-              <i class="fa-solid fa-angle-down text-white"></i>
             </button>
           </div>
         </div>
@@ -744,7 +688,7 @@
           <!-- Bonus Track Heading Start -->
           <div class="text-center">
             <h2
-              class="font-inter font-extrabold lg:text-[56px] text-[45px] text-white leading-[120%] pb-4 capitalize"
+              class="font-inter font-extrabold lg:text-[56px] text-[35px] text-white leading-[120%] pb-4 capitalize"
             >
               Bonus Courses
               <span
@@ -1070,120 +1014,89 @@
   <!-- Roadmap Part End -->
 
     <!--Our Students & Stories Part start-->
-    <section class="py-25 bg-[#050111] px-4 lg:px-10">
-      <div class="text-center mb-16">
-        <h2
-          class="text-white text-[40px] lg:text-[56px] font-extrabold font-Inter"
-        >
+    <section class="py-20 lg:py-24 bg-[#050111] px-4 sm:px-6 lg:px-10">
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-white text-[35px] lg:text-[56px] font-extrabold font-Inter">
           Our Students
-          <span
-            class="bg-linear-to-r from-[#7F5CFF] to-[#4E95FF] bg-clip-text text-transparent"
-            >Shared their Stories</span
-          >
+          <span class="bg-linear-to-r from-[#7F5CFF] to-[#4E95FF] bg-clip-text text-transparent italic">Shared Their Stories</span>
         </h2>
-        <p class="text-[#A9B0B8] font-Roboto lg:text-[18px] text-base max-w-2xl mx-auto mt-4">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
-          at non suscipit.
+        <p class="text-[#A9B0B8] font-Roboto text-lg max-w-2xl mx-auto mt-4">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 xl:grid-cols-3 gap-6 lg:w-350 mx-auto">
-        <!-- One -->
-        <div
-          class="bg-[#FDF5E6] flex items-stretch rounded-3xl overflow-hidden p-3 h-70"
-        >
-          <div class="w-[40%]">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <!-- Card One -->
+        <div class="bg-[#FDF5E6] flex flex-col sm:flex-row items-stretch rounded-3xl overflow-hidden p-3 min-h-75 sm:min-h-70">
+          <div class="w-full sm:w-[40%]">
             <img
               src="images/Rafi.png"
               alt="Rafi"
               class="w-full h-full object-cover rounded-[18px]"
             />
           </div>
-          <div class="w-[60%] pl-4 flex flex-col justify-center py-2">
+          <div class="w-full sm:w-[60%] pl-4 flex flex-col justify-center py-4 sm:py-2">
             <div class="flex items-center gap-1 mb-2">
               <span class="font-bold text-lg">5.0</span>
               <div class="text-[#FF9B03] flex text-xs">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               </div>
             </div>
             <p class="text-[#38435C] text-[13px] leading-relaxed mb-4">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros.
             </p>
             <h5 class="text-[18px] font-bold text-[#050111]">Mesbaul Haque</h5>
-            <p class="text-[12px] text-[#38435C] font-medium">
-              Batch - FDR 2504
-            </p>
+            <p class="text-[12px] text-[#38435C] font-medium">Batch - FDR 2504</p>
           </div>
         </div>
-        <!-- One -->
-        <!-- Two -->
-        <div
-          class="bg-[#EFF8F2] flex items-stretch rounded-3xl overflow-hidden p-3 min-h-70"
-        >
-          <div class="w-[40%]">
+
+        <!-- Card Two -->
+        <div class="bg-[#EFF8F2] flex flex-col sm:flex-row items-stretch rounded-3xl overflow-hidden p-3 min-h-75 sm:min-h-70">
+          <div class="w-full sm:w-[40%]">
             <img
               src="images/majharul.jpg"
               alt="Majharul"
               class="w-full h-full object-cover rounded-[18px]"
             />
           </div>
-          <div class="w-[60%] pl-4 flex flex-col justify-center py-2">
+          <div class="w-full sm:w-[60%] pl-4 flex flex-col justify-center py-4 sm:py-2">
             <div class="flex items-center gap-1 mb-2">
               <span class="font-bold text-lg">5.0</span>
               <div class="text-[#FF9B03] flex text-xs">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               </div>
             </div>
             <p class="text-[#38435C] text-[13px] leading-relaxed mb-4">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros.
             </p>
             <h5 class="text-[18px] font-bold text-[#050111]">Majharul Islam</h5>
-            <p class="text-[12px] text-[#38435C] font-medium">
-              Batch - FDR 2504
-            </p>
+            <p class="text-[12px] text-[#38435C] font-medium">Batch - FDR 2504</p>
           </div>
         </div>
-        <!-- Two -->
-        <!-- Three -->
-        <div
-          class="bg-white flex items-stretch rounded-3xl overflow-hidden p-3 lg:h-70"
-        >
-          <div class="w-[40%]">
+
+        <!-- Card Three -->
+        <div class="bg-white flex flex-col sm:flex-row items-stretch rounded-3xl overflow-hidden p-3 min-h-75 sm:min-h-70">
+          <div class="w-full sm:w-[40%]">
             <img
               src="images/Shoumen Biswas.jpg"
               alt="Shoumen"
-              class="h-62.5 w-50 lg:w-full lg:h-full object-cover rounded-[18px]"
+              class="w-full h-full object-cover rounded-[18px]"
             />
           </div>
-          <div class="w-[60%] pl-4 flex flex-col justify-center py-2">
+          <div class="w-full sm:w-[60%] pl-4 flex flex-col justify-center py-4 sm:py-2">
             <div class="flex items-center gap-1 mb-2">
               <span class="font-bold text-lg">5.0</span>
               <div class="text-[#FF9B03] flex text-xs">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               </div>
             </div>
             <p class="text-[#38435C] text-[13px] leading-relaxed mb-4">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
+              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros.
             </p>
             <h5 class="text-[18px] font-bold text-[#050111]">Shoumen Biswas</h5>
-            <p class="text-[12px] text-[#38435C] font-medium">
-              Batch - FDR 2504
-            </p>
+            <p class="text-[12px] text-[#38435C] font-medium">Batch - FDR 2504</p>
           </div>
         </div>
-        <!-- Three -->
       </div>
     </section>
     <!-- Our Students & Stories Part  -->
@@ -1203,7 +1116,7 @@
             <div class="flex flex-col lg:flex-row gap-y-8 justify-between">
               <div class="left">
                 <h3
-                  class="lg:text-[56px] text-[40px] lg:text-left text-center font-extrabold font-inter text-white"
+                  class="lg:text-[56px] text-[35px] lg:text-left text-center font-extrabold font-inter text-white"
                 >
                   Ready to
                 </h3>
@@ -1236,10 +1149,10 @@
               <div class="right">
                 <!-- input field -->
                 <div
-                  class="relative p-0.75 lg:w-115.25 rounded-[10px] overflow-hidden group shadow-newShadow"
+                  class="relative p-0.75 lg:w-115.25 rounded-[10px] overflow-hidden shadow-newShadow"
                 >
                   <div
-                    class="absolute inset-0 bg-[linear-gradient(to_top_right,#35B1FF,#050111,#22c55e)]"
+                    class="absolute inset-0 linearInput"
                   ></div>
                   <div class="relative bg-[#050111] rounded-[9px] p-6 z-10">
                     <div class="text text-white pb-8">
@@ -1364,7 +1277,7 @@
         class="bg-[url('/images/EDBImg.png')] py-40 bg-center bg-cover bg-no-repeat"
       >
         <h3
-          class="lg:text-[56px] text-[36px] text-center font-extrabold font-Inter text-white mx-auto w-full lg:w-260.5"
+          class="lg:text-[56px] text-[30px] text-center font-extrabold font-Inter text-white mx-auto w-full lg:w-260.5"
         >
           Eye Catchy Web Development Banner
         </h3>
@@ -1387,19 +1300,19 @@
         class="absolute bottom-20 right-40 hidden lg:block"
       />
       <!-- BG Image -->
-      <div class="lg:w-[1140px] mx-auto">
+      <div class="lg:w-[1140px] mx-auto px-2 lg:px-0">
         <!-- Header -->
         <h3
-          class="lg:text-[56px] text-[36px] font-extrabold text-center text-white"
+          class="lg:text-[56px] text-[35px] font-extrabold text-center text-white"
         >
           Frequently Asked
           <span
-            class="bg-gradient-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent"
+            class="bg-gradient-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent italic"
             >Questions</span
           >
         </h3>
         <p
-          class="text-[#A9B0B8]  lg:text-[18px] text-base leading-[150%] text-center lg:w-[810px] w-[390px] mx-auto pt-4 pb-8"
+          class="text-[#A9B0B8] lg:text-lg text-sm leading-[150%] text-center lg:w-[810px] w-full mx-auto pt-4 pb-8"
         >
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
@@ -1408,50 +1321,34 @@
         <!-- Header -->
         <!-- Content -->
         <div
-          class="lg:w-[872px] w-[380px] mx-auto flex-col lg:gap-y-6 gap-y-4 flex max-width"
+          class="lg:w-[872px] w-full mx-auto flex-col lg:gap-y-6 gap-y-4 flex max-width"
         >
+        <div class="w-full lg:w-218">
           <div class="relative rounded-2xl p-[2px]">
             <div class="rounded-2xl bg-[#100F28] p-6 relative cursor-pointer">
-              <h3 class="text-white font-semibold text-lg lg:w-full w-full">
+              <h3 class="text-white font-semibold lg:text-lg text-[11px] lg:w-full w-full">
                 Title wil be here for the frequently asked question
               </h3>
               <p
-                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] text-lg text-[#A9B0B8]"
+              class="leading-[150%] mt-4 lg:w-[760px] w-[320px] lg:text-lg text-[10px] text-[#A9B0B8]"
               >
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit. Felis posuere maecenas interdum sit
-                cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-              </p>
-              <i
-                class="fa-solid fa-minus absolute lg:top-1 top-3 right-4 text-2xl text-transparent bg-clip-text bg-linear-to-r from-[#4E95FF] to-[#7F5CFF]"
-              ></i>
-            </div>
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
+              eu est at non suscipit. Felis posuere maecenas interdum sit
+              cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+            </p>
+            <i
+            class="fa-solid fa-minus absolute lg:top-1 top-3 right-4 text-2xl text-transparent bg-clip-text bg-linear-to-r from-[#4E95FF] to-[#7F5CFF]"
+            ></i>
           </div>
+        </div>
+      </div>
           <div class="relative rounded-2xl p-[2px]">
             <div class="rounded-2xl bg-[#100F28] p-6 relative cursor-pointer">
-              <h3 class="text-white font-semibold text-lg lg:w-full w-full">
+              <h3 class="text-white font-semibold lg:text-lg text-[11px] lg:w-full w-full">
                 Title wil be here for the frequently asked question
               </h3>
               <p
-                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] text-lg text-[#A9B0B8]"
-              >
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit. Felis posuere maecenas interdum sit
-                cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-              </p>
-
-              <i
-                class="fa-solid fa-minus absolute lg:top-1 top-3 right-4 text-2xl text-transparent bg-clip-text bg-linear-to-r from-[#4E95FF] to-[#7F5CFF]"
-              ></i>
-            </div>
-          </div>
-          <div class="relative rounded-2xl p-[2px]">
-            <div class="rounded-2xl bg-[#100F28] p-6 relative cursor-pointer">
-              <h3 class="text-white font-semibold text-lg lg:w-full w-full">
-                Title wil be here for the frequently asked question
-              </h3>
-              <p
-                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] text-lg text-[#A9B0B8]"
+                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] lg:text-lg text-[10px] text-[#A9B0B8]"
               >
                 Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
                 eu est at non suscipit. Felis posuere maecenas interdum sit
@@ -1465,11 +1362,29 @@
           </div>
           <div class="relative rounded-2xl p-[2px]">
             <div class="rounded-2xl bg-[#100F28] p-6 relative cursor-pointer">
-              <h3 class="text-white font-semibold text-lg lg:w-full w-full">
+              <h3 class="text-white font-semibold lg:text-lg text-[11px] lg:w-full w-full">
                 Title wil be here for the frequently asked question
               </h3>
               <p
-                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] text-lg text-[#A9B0B8]"
+                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] lg:text-lg text-[10px] text-[#A9B0B8]"
+              >
+                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
+                eu est at non suscipit. Felis posuere maecenas interdum sit
+                cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+              </p>
+
+              <i
+                class="fa-solid fa-minus absolute lg:top-1 top-3 right-4 text-2xl text-transparent bg-clip-text bg-linear-to-r from-[#4E95FF] to-[#7F5CFF]"
+              ></i>
+            </div>
+          </div>
+          <div class="relative rounded-2xl p-[2px]">
+            <div class="rounded-2xl bg-[#100F28] p-6 relative cursor-pointer">
+              <h3 class="text-white font-semibold lg:text-lg text-[11px] lg:w-full w-full">
+                Title wil be here for the frequently asked question
+              </h3>
+              <p
+                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] lg:text-lg text-[10px] text-[#A9B0B8]"
               >
                 Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
                 eu est at non suscipit. Felis posuere maecenas interdum sit
@@ -1483,11 +1398,11 @@
           </div>
           <div class="relative rounded-2xl p-[2px]">
             <div class="rounded-2xl bg-[#100F28] p-6 relative cursor-pointer">
-              <h3 class="text-white font-semibold text-lg lg:w-full w-full">
+              <h3 class="text-white font-semibold lg:text-lg text-[11px] lg:w-full w-full">
                 Title wil be here for the frequently asked question
               </h3>
               <p
-                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] text-lg text-[#A9B0B8]"
+                class="leading-[150%] mt-4 lg:w-[760px] w-[320px] lg:text-lg text-[10px] text-[#A9B0B8]"
               >
                 Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
                 eu est at non suscipit. Felis posuere maecenas interdum sit
