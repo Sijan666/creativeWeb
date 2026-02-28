@@ -1964,12 +1964,6 @@
       text-align: left;
     }
   }
-  .lg\:text-lg {
-    @media (width >= 64rem) {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
   .lg\:text-\[18px\] {
     @media (width >= 64rem) {
       font-size: 18px;
@@ -2048,7 +2042,7 @@
 }
 .heading h3 {
   margin-inline: auto;
-  width: calc(var(--spacing) * 70);
+  width: 100%;
   font-family: var(--font-inter);
   font-size: 35px;
   --tw-leading: var(--leading-tight);
@@ -2057,14 +2051,11 @@
   font-weight: var(--font-weight-extrabold);
   color: var(--color-white);
   text-transform: capitalize;
-  @media (width >= 48rem) {
-    width: calc(var(--spacing) * 208.75);
-  }
-  @media (width >= 64rem) {
-    width: calc(var(--spacing) * 208.75);
-  }
   @media (width >= 64rem) {
     font-size: 56px;
+  }
+  @media (width >= 80rem) {
+    width: calc(var(--spacing) * 208.75);
   }
 }
 .heading h3 span {
