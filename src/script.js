@@ -67,3 +67,4 @@ document.addEventListener("click", function (e) {
     menu.classList.add("opacity-0", "scale-95", "pointer-events-none");
   }
 });
+

@@ -323,13 +323,13 @@
       <div class="lg:bg-[url('/images/pVideo.png')] bg-no-repeat bg-center">
         <div class="max-w-container mx-auto px-3">
           
-          <h3 class="lg:text-[56px] text-[35px] font-extrabold text-center text-white leading-[130%]">
+          <h3 class="lg:text-[56px] text-[35px] font-extrabold text-center text-white leading-[130%] font-inter">
             Here Will Be
             <span class="bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent italic">
               Promotion Video
             </span>
           </h3>
-          <p class="text-[#A9B0B8] lg:text-lg text-sm leading-[150%] text-center lg:w-202.5 w-full mx-auto pt-4 pb-10">
+          <p class="text-[#A9B0B8] lg:text-[18px] text-sm leading-[150%] text-center lg:w-202.5 w-full mx-auto pt-4 pb-10 font-roboto">
             Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
             est at non suscipit. Felis posuere maecenas interdum sit cras.
             Egestas sed nunc sodales arcu mi ut volutpat lobortis.
@@ -354,7 +354,7 @@
             
           </div>
           <div class="flex flex-col lg:flex-row gap-y-5 justify-between mt-8">
-            <div class="">
+            <div class="font-roboto">
               <h5 class="text-white text-xl font-semibold">
                 Some text will be here
               </h5>
@@ -364,7 +364,7 @@
                 neque ut mauris nulla eros.
               </p>
             </div>
-            <div class="">
+            <div class="font-roboto">
               <h5 class="text-white text-xl font-semibold">
                 Some text will be here
               </h5>
@@ -374,7 +374,7 @@
                 neque ut mauris nulla eros.
               </p>
             </div>
-            <div class="">
+            <div class="font-roboto">
               <h5 class="text-white text-xl font-semibold">
                 Some text will be here
               </h5>
@@ -393,289 +393,171 @@
 
     <!-- course module -->
     <section class="bg-[#050111]">
-      <div
-        class="bg-[url('/images/coursemodulBg.png')] bg-no-repeat bg-center bg-cover pt-26.25 pb-32.5"
-      >
-        <div class="lg:w-container w-full mx-auto px-4 lg:px-0">
+      <div class="bg-[url('/images/coursemodulBg.png')] bg-no-repeat bg-center bg-cover pt-16 md:pt-20 lg:pt-26 pb-20 md:pb-24 lg:pb-32">
+        <div class="max-w-container w-full mx-auto px-4 md:px-8">
           <div class="text-center">
-            <h2
-              class="font-inter font-extrabold lg:text-[56px] text-[35px] text-white leading-[120%] pb-4 capitalize"
-            >
+            <h2 class="font-inter font-extrabold lg:text-[56px] md:text-[45px] text-[35px] text-white leading-[120%] pb-4 capitalize">
               Here will be
-              <span
-                class="bg-linear-to-r from-[#7F5CFF] to-[#4E95FF] bg-clip-text text-transparent italic"
-                >Course Module</span
-              >
+              <span class="bg-linear-to-r from-[#7F5CFF] to-[#4E95FF] bg-clip-text text-transparent italic">
+                Course Module
+              </span>
             </h2>
-            <p
-              class="font-roboto font-normal text-[18px] text-[#A9B0B8] leading-[150%] lg:w-202.25 w-full mx-auto"
-            >
+            <p class="font-roboto lg:text-[18px] text-sm text-[#A9B0B8] leading-[150%] max-w-200 w-full mx-auto">
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
               est at non suscipit. Felis posuere maecenas interdum sit cras.
               Egestas sed nunc sodales arcu mi ut volutpat lobortis.
             </p>
           </div>
-          <div class="my-8 grid lg:grid-cols-2 gap-6">
+          
+          <div class="my-8 md:my-12 grid lg:grid-cols-2 grid-cols-1 gap-6 md:gap-8">
             <div class="space-y-6">
-              <div
-                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#FBFF8D] p-1 rounded-[5px]">
-                    <img
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
+              <div class="module-card p-4 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer hover:bg-[#232d42] transition-colors duration-300">
+                <div class="flex gap-3 mb-2">
+                  <div class="bg-[#FBFF8D] p-1 rounded-[5px] shrink-0 h-fit">
+                    <img src="/images/courseModuleElement.png" alt="courseModuleElement" class="w-6 h-6 object-contain" />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <h5
-                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                    >
+                    <h5 class="font-roboto font-semibold md:text-[18px] text-[16px] text-white leading-[150%] pr-2">
                       Module title will be here
                     </h5>
                     <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
-                <p
-                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
-                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
-                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
-                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
-                  nisl faucibus mattis est et.
+                <p class="module-content hidden font-roboto font-normal text-sm text-[#A9B0B8] leading-[150%] mt-3 pl-11">
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
                 </p>
               </div>
 
-              <div
-                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#EDB5FF] p-1 rounded-[5px]">
-                    <img
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
+              <div class="module-card p-4 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer hover:bg-[#232d42] transition-colors duration-300">
+                <div class="flex gap-3 mb-2">
+                  <div class="bg-[#EDB5FF] p-1 rounded-[5px] shrink-0 h-fit">
+                    <img src="/images/courseModuleElement.png" alt="courseModuleElement" class="w-6 h-6 object-contain" />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <h5
-                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                    >
+                    <h5 class="font-roboto font-semibold md:text-[18px] text-[16px] text-white leading-[150%] pr-2">
                       Module title will be here
                     </h5>
                     <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
-                <p
-                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
-                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
-                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
-                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
-                  nisl faucibus mattis est et.
+                <p class="module-content hidden font-roboto font-normal text-sm text-[#A9B0B8] leading-[150%] mt-3 pl-11">
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
                 </p>
               </div>
 
-              <div
-                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#7DD8FF] p-1 rounded-[5px]">
-                    <img
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
+              <div class="module-card p-4 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer hover:bg-[#232d42] transition-colors duration-300">
+                <div class="flex gap-3 mb-2">
+                  <div class="bg-[#7DD8FF] p-1 rounded-[5px] shrink-0 h-fit">
+                    <img src="/images/courseModuleElement.png" alt="courseModuleElement" class="w-6 h-6 object-contain" />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <h5
-                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                    >
+                    <h5 class="font-roboto font-semibold md:text-[18px] text-[16px] text-white leading-[150%] pr-2">
                       Module title will be here
                     </h5>
                     <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
-                <p
-                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
-                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
-                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
-                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
-                  nisl faucibus mattis est et.
+                <p class="module-content hidden font-roboto font-normal text-sm text-[#A9B0B8] leading-[150%] mt-3 pl-11">
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
                 </p>
               </div>
 
-              <div
-                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#A5D0B4] p-1 rounded-[5px]">
-                    <img
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
+              <div class="module-card p-4 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer hover:bg-[#232d42] transition-colors duration-300">
+                <div class="flex gap-3 mb-2">
+                  <div class="bg-[#A5D0B4] p-1 rounded-[5px] shrink-0 h-fit">
+                    <img src="/images/courseModuleElement.png" alt="courseModuleElement" class="w-6 h-6 object-contain" />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <h5
-                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                    >
+                    <h5 class="font-roboto font-semibold md:text-[18px] text-[16px] text-white leading-[150%] pr-2">
                       Module title will be here
                     </h5>
                     <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
-                <p
-                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
-                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
-                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
-                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
-                  nisl faucibus mattis est et.
+                <p class="module-content hidden font-roboto font-normal text-sm text-[#A9B0B8] leading-[150%] mt-3 pl-11">
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
                 </p>
               </div>
             </div>
+
             <div class="space-y-6">
-              <div
-                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#96FFA2] p-1 rounded-[5px]">
-                    <img
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
+              <div class="module-card p-4 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer hover:bg-[#232d42] transition-colors duration-300">
+                <div class="flex gap-3 mb-2">
+                  <div class="bg-[#96FFA2] p-1 rounded-[5px] shrink-0 h-fit">
+                    <img src="/images/courseModuleElement.png" alt="courseModuleElement" class="w-6 h-6 object-contain" />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <h5
-                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                    >
+                    <h5 class="font-roboto font-semibold md:text-[18px] text-[16px] text-white leading-[150%] pr-2">
                       Module title will be here
                     </h5>
                     <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
-                <p
-                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
-                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
-                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
-                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
-                  nisl faucibus mattis est et.
+                <p class="module-content hidden font-roboto font-normal text-sm text-[#A9B0B8] leading-[150%] mt-3 pl-11">
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
                 </p>
               </div>
 
-              <div
-                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#FFC081] p-1 rounded-[5px]">
-                    <img
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
+              <div class="module-card p-4 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer hover:bg-[#232d42] transition-colors duration-300">
+                <div class="flex gap-3 mb-2">
+                  <div class="bg-[#FFC081] p-1 rounded-[5px] shrink-0 h-fit">
+                    <img src="/images/courseModuleElement.png" alt="courseModuleElement" class="w-6 h-6 object-contain" />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <h5
-                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                    >
+                    <h5 class="font-roboto font-semibold md:text-[18px] text-[16px] text-white leading-[150%] pr-2">
                       Module title will be here
                     </h5>
                     <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
-                <p
-                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
-                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
-                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
-                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
-                  nisl faucibus mattis est et.
+                <p class="module-content hidden font-roboto font-normal text-sm text-[#A9B0B8] leading-[150%] mt-3 pl-11">
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
                 </p>
               </div>
 
-              <div
-                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#ABBED0] p-1 rounded-[5px]">
-                    <img
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
+              <div class="module-card p-4 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer hover:bg-[#232d42] transition-colors duration-300">
+                <div class="flex gap-3 mb-2">
+                  <div class="bg-[#ABBED0] p-1 rounded-[5px] shrink-0 h-fit">
+                    <img src="/images/courseModuleElement.png" alt="courseModuleElement" class="w-6 h-6 object-contain" />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <h5
-                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                    >
+                    <h5 class="font-roboto font-semibold md:text-[18px] text-[16px] text-white leading-[150%] pr-2">
                       Module title will be here
                     </h5>
                     <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
-                <p
-                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
-                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
-                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
-                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
-                  nisl faucibus mattis est et.
+                <p class="module-content hidden font-roboto font-normal text-sm text-[#A9B0B8] leading-[150%] mt-3 pl-11">
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
                 </p>
               </div>
 
-              <div
-                class="module-card p-4 lg:w-139.5 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer"
-              >
-                <div class="flex gap-2 mb-2">
-                  <div class="bg-[#F68787] p-1 rounded-[5px]">
-                    <img
-                      src="/images/courseModuleElement.png"
-                      alt="courseModuleElement"
-                    />
+              <div class="module-card p-4 w-full rounded-[10px] border border-[#7451FD] bg-[#1A2130] cursor-pointer hover:bg-[#232d42] transition-colors duration-300">
+                <div class="flex gap-3 mb-2">
+                  <div class="bg-[#F68787] p-1 rounded-[5px] shrink-0 h-fit">
+                    <img src="/images/courseModuleElement.png" alt="courseModuleElement" class="w-6 h-6 object-contain" />
                   </div>
                   <div class="flex items-center justify-between w-full">
-                    <h5
-                      class="font-roboto font-semibold text-[18px] text-white leading-[150%]"
-                    >
+                    <h5 class="font-roboto font-semibold md:text-[18px] text-[16px] text-white leading-[150%] pr-2">
                       Module title will be here
                     </h5>
                     <i class="fa-solid fa-angle-down text-[#A9B0B8]"></i>
                   </div>
                 </div>
-                <p
-                  class="module-content hidden font-roboto font-normal text-sm text-white leading-[150%] mt-3"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis
-                  adipiscing sed mauris sapien. Lacus tempus nec sit nec
-                  facilisis velit. Et egestas arcu nibh in pulvinar sit.
-                  Ullamcorper turpis laoreet in ultricies at pretium ullamcorper
-                  aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut
-                  nisl faucibus mattis est et.
+                <p class="module-content hidden font-roboto font-normal text-sm text-[#A9B0B8] leading-[150%] mt-3 pl-11">
+                  Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="flex items-center justify-center">
-            <button class="relative p-4 rounded-[10px] border border-[#7451FD] overflow-hidden group cursor-pointer">
-              <span
-                class="absolute inset-0 bg-gradientNew opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </span>
-              <p class="relative z-10 font-medium font-roboto text-[18px] text-white">
-                Load More<i class="fa-solid fa-angle-down text-white"></i>
-              </p>
+          <div class="flex items-center justify-center mt-8">
+            <button class="relative py-3 px-6 rounded-[10px] border border-[#7451FD] overflow-hidden group cursor-pointer">
+              <span class="absolute inset-0 bg-gradientNew opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <div class="relative z-10 font-medium font-roboto text-[16px] md:text-[18px] text-white flex items-center justify-center gap-2">
+                <span>Load More</span>
+                <i class="fa-solid fa-angle-down text-white"></i>
+              </div>
             </button>
           </div>
         </div>
@@ -685,112 +567,66 @@
 
     <!-- Bonus Track Part Start Here -->
     <section class="bg-[#050111]">
-      <div
-        class="bg-[url('/images/bonusTrackbg.png')] bg-no-repeat bg-center bg-cover py-25"
-      >
-        <div class="lg:w-container w-full mx-auto px-4 lg:px-0">
-          <!-- Bonus Track Heading Start -->
+      <div class="bg-[url('/images/bonusTrackbg.png')] bg-no-repeat bg-center bg-cover py-12 lg:py-25">
+        <div class="max-w-container w-full mx-auto px-4">
+          
           <div class="text-center">
-            <h2
-              class="font-inter font-extrabold lg:text-[56px] text-[35px] text-white leading-[120%] pb-4 capitalize"
-            >
+            <h2 class="font-inter font-extrabold text-[32px] md:text-[45px] lg:text-[56px] text-white leading-[120%] pb-4 capitalize">
               Bonus Courses
-              <span
-                class="bg-linear-to-r from-[#7F5CFF] to-[#4E95FF] bg-clip-text text-transparent italic"
-                >Learn For Free</span
-              >
+              <span class="bg-linear-to-r from-[#7F5CFF] to-[#4E95FF] bg-clip-text text-transparent italic">
+                Learn For Free
+              </span>
             </h2>
-            <p
-              class="font-roboto font-normal text-[18px] text-[#A9B0B8] leading-[150%] lg:w-202.25 w-full mx-auto"
-            >
+            <p class="font-roboto text-sm md:text-base lg:text-[18px] text-[#A9B0B8] leading-[150%] max-w-200 mx-auto">
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
               est at non suscipit. Felis posuere maecenas interdum sit cras.
               Egestas sed nunc sodales arcu mi ut volutpat lobortis.
             </p>
           </div>
-          <!-- Bonus Track Heading End -->
+          <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            
+            <div class="py-6 px-4 rounded-[10px] bg-[#050111] border border-b-[#FBFF8D] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(251,255,141,0.4)] cursor-pointer">
+              <img class="mx-auto w-auto h-auto" src="/images/bonusImgOne.png" alt="Bonus One" />
+              <div class="flex items-center gap-2 justify-center pt-4">
+                <p class="font-inter font-medium text-[14px] text-white leading-[150%]">
+                  Journey Title will be here
+                </p>
+                <i class="fa-solid fa-arrow-right-long text-white"></i>
+              </div>
+            </div>
 
-          <!-- Bonus Track Card Start -->
-          <div class="mt-8 grid lg:grid-cols-4 gap-3">
-            <!-- Card One -->
-            <div
-              class="py-6 px-2.5 rounded-[10px] bg-[#050111] border border-b-[#FBFF8D] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(251,255,141,0.4)] cursor-pointer"
-            >
-              <img
-                class="mx-auto"
-                src="/images/bonusImgOne.png"
-                alt="bonusImgOne.png"
-              />
-              <div class="flex items-center gap-1 justify-center pt-4">
-                <p
-                  class="font-inter font-medium text-[12px] text-white leading-[150%]"
-                >
+            <div class="py-6 px-4 rounded-[10px] bg-[#050111] border border-b-[#7DD8FF] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(125,216,255,0.5)] cursor-pointer">
+              <img class="mx-auto w-auto h-auto" src="/images/bonusImgtwo.png" alt="Bonus Two" />
+              <div class="flex items-center gap-2 justify-center pt-4">
+                <p class="font-inter font-medium text-[14px] text-white leading-[150%]">
                   Journey Title will be here
                 </p>
                 <i class="fa-solid fa-arrow-right-long text-white"></i>
               </div>
             </div>
-            <!-- Card One -->
-            <!-- Card Two -->
-            <div
-              class="py-6 px-2.5 rounded-[10px] bg-[#050111] border border-b-[#7DD8FF] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(125,216,255,0.5)] cursor-pointer"
-            >
-              <img
-                class="mx-auto"
-                src="/images/bonusImgtwo.png"
-                alt="bonusImgtwo.png"
-              />
-              <div class="flex items-center gap-1 justify-center pt-4">
-                <p
-                  class="font-inter font-medium text-[12px] text-white leading-[150%]"
-                >
+
+            <div class="py-6 px-4 rounded-[10px] bg-[#050111] border border-b-[#96FFA2] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(150,255,162,0.5)] cursor-pointer">
+              <img class="mx-auto w-auto h-auto" src="/images/bonusImgthree.png" alt="Bonus Three" />
+              <div class="flex items-center gap-2 justify-center pt-4">
+                <p class="font-inter font-medium text-[14px] text-white leading-[150%]">
                   Journey Title will be here
                 </p>
                 <i class="fa-solid fa-arrow-right-long text-white"></i>
               </div>
             </div>
-            <!-- Card Two -->
-            <!-- Card Three -->
-            <div
-              class="py-6 px-2.5 rounded-[10px] bg-[#050111] border border-b-[#96FFA2] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(150,255,162,0.5)] cursor-pointer"
-            >
-              <img
-                class="mx-auto"
-                src="/images/bonusImgthree.png"
-                alt="bonusImgthree.png"
-              />
-              <div class="flex items-center gap-1 justify-center pt-4">
-                <p
-                  class="font-inter font-medium text-[12px] text-white leading-[150%]"
-                >
+
+            <div class="py-6 px-4 rounded-[10px] bg-[#050111] border border-b-[#EDB5FF] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(237,181,255,0.5)] cursor-pointer">
+              <img class="mx-auto w-auto h-auto" src="/images/bonusImgFour.png" alt="Bonus Four" />
+              <div class="flex items-center gap-2 justify-center pt-4">
+                <p class="font-inter font-medium text-[14px] text-white leading-[150%]">
                   Journey Title will be here
                 </p>
                 <i class="fa-solid fa-arrow-right-long text-white"></i>
               </div>
             </div>
-            <!-- Card Three -->
-            <!-- Card Four -->
-            <div
-              class="py-6 px-2.5 rounded-[10px] bg-[#050111] border border-b-[#EDB5FF] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(237,181,255,0.5)] cursor-pointer"
-            >
-              <img
-                class="mx-auto"
-                src="/images/bonusImgFour.png"
-                alt="bonusImgFour.png"
-              />
-              <div class="flex items-center gap-1 justify-center pt-4">
-                <p
-                  class="font-inter font-medium text-[12px] text-white leading-[150%]"
-                >
-                  Journey Title will be here
-                </p>
-                <i class="fa-solid fa-arrow-right-long text-white"></i>
-              </div>
-            </div>
-            <!-- Card Four -->
+
           </div>
-          <!-- Bonus Track Card End -->
-        </div>
+          </div>
       </div>
     </section>
     <!-- Bonus Track Part End Here -->
@@ -799,7 +635,7 @@
     <section id="projectsPart">
       <div class="projects">
         <div class="max-w-container mx-auto px-3">
-          <div class="heading projectsHead">
+          <div class="heading projectsHead ">
             <h3>Web Projects <span>will be here</span></h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
@@ -910,112 +746,112 @@
     </section>
     <!-- Projects Part End -->
 
-  <!-- Roadmap Part Start -->
-  <section id="roadmapPart">
-    <div class="roadmap">
-      <div class="max-w-container mx-auto px-3">
-        <div class="heading roadmapHead">
-          <h3>An exciting <span>journey roadmap</span></h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
-            est at non suscipit. Felis posuere maecenas interdum sit cras.
-            Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-          </p>
-        </div>
-        <div class="allRoadmaps">
-          <div class="allRoadmapsFlex">
-            <div
-              class=" bg-linear-to-br from-[#CCA3FF] via-[#050111] via-50% to-[#050111] p-0.5 lg:w-[31%] rounded-[20px]">
-              <div class="roadmapContent roadmapContentFirst w-full!">
-                <div class="serial">
-                  <div class="serialNum">
-                    <span>1</span>
+    <!-- Roadmap Part Start -->
+    <section id="roadmapPart">
+      <div class="roadmap">
+        <div class="max-w-container mx-auto px-3">
+          <div class="heading roadmapHead">
+            <h3>An exciting <span>journey roadmap</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
+              est at non suscipit. Felis posuere maecenas interdum sit cras.
+              Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+            </p>
+          </div>
+          <div class="allRoadmaps">
+            <div class="allRoadmapsFlex">
+              <div
+                class=" bg-linear-to-br from-[#CCA3FF] via-[#050111] via-50% to-[#050111] p-0.5 lg:w-[31%] rounded-[20px]">
+                <div class="roadmapContent roadmapContentFirst w-full!">
+                  <div class="serial">
+                    <div class="serialNum">
+                      <span>1</span>
+                    </div>
+                    <div class="line lineOne"></div>
                   </div>
-                  <div class="line lineOne"></div>
+                  <h4>Journey Title will be here</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+                    neque ut mauris nulla eros.
+                  </p>
                 </div>
-                <h4>Journey Title will be here</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                  ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-                  neque ut mauris nulla eros.
-                </p>
               </div>
-            </div>
-            <div
-              class=" bg-linear-to-tr from-[#36FF6C] via-[#050111] via-50% to-transparent p-0.5 lg:w-[31%] rounded-[20px]">
-              <div class="roadmapContent roadmapContentFirst w-full!">
-                <div class="serial">
-                  <div class="serialNum">
-                    <span>2</span>
+              <div
+                class=" bg-linear-to-tr from-[#36FF6C] via-[#050111] via-50% to-transparent p-0.5 lg:w-[31%] rounded-[20px]">
+                <div class="roadmapContent roadmapContentFirst w-full!">
+                  <div class="serial">
+                    <div class="serialNum">
+                      <span>2</span>
+                    </div>
+                    <div class="line lineTwo"></div>
                   </div>
-                  <div class="line lineTwo"></div>
+                  <h4>Journey Title will be here</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+                    neque ut mauris nulla eros.
+                  </p>
                 </div>
-                <h4>Journey Title will be here</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                  ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-                  neque ut mauris nulla eros.
-                </p>
               </div>
-            </div>
-            <div
-              class=" bg-linear-to-bl from-[#FFB265] via-[#050111] via-50% to-[#050111] p-0.5 lg:w-[31%] rounded-[20px]">
-              <div class="roadmapContent roadmapContentFirst w-full!">
-                <div class="serial">
-                  <div class="serialNum">
-                    <span>3</span>
+              <div
+                class=" bg-linear-to-bl from-[#FFB265] via-[#050111] via-50% to-[#050111] p-0.5 lg:w-[31%] rounded-[20px]">
+                <div class="roadmapContent roadmapContentFirst w-full!">
+                  <div class="serial">
+                    <div class="serialNum">
+                      <span>3</span>
+                    </div>
+                    <div class="line lineThree"></div>
                   </div>
-                  <div class="line lineThree"></div>
+                  <h4>Journey Title will be here</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+                    neque ut mauris nulla eros.
+                  </p>
                 </div>
-                <h4>Journey Title will be here</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                  ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-                  neque ut mauris nulla eros.
-                </p>
               </div>
-            </div>
-            <div
-              class=" bg-linear-to-tr from-[#FF6767] via-[#050111] via-50% to-transparent p-0.5 lg:w-[48%] rounded-[20px]">
-              <div class="roadmapContent w-full!">
-                <div class="serial">
-                  <div class="serialNum">
-                    <span>4</span>
+              <div
+                class=" bg-linear-to-tr from-[#FF6767] via-[#050111] via-50% to-transparent p-0.5 lg:w-[48%] rounded-[20px]">
+                <div class="roadmapContent w-full!">
+                  <div class="serial">
+                    <div class="serialNum">
+                      <span>4</span>
+                    </div>
+                    <div class="line lineFour"></div>
                   </div>
-                  <div class="line lineFour"></div>
+                  <h4>Journey Title will be here</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+                    neque ut mauris nulla eros.
+                  </p>
                 </div>
-                <h4>Journey Title will be here</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                  ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-                  neque ut mauris nulla eros.
-                </p>
               </div>
-            </div>
-            <div
-              class=" bg-linear-to-tl from-[#5BA7FF] via-[#050111] via-50% to-[#050111] p-0.5 lg:w-[48%] rounded-[20px]">
-              <div class="roadmapContent w-full!">
-                <div class="serial">
-                  <div class="serialNum">
-                    <span>5</span>
+              <div
+                class=" bg-linear-to-tl from-[#5BA7FF] via-[#050111] via-50% to-[#050111] p-0.5 lg:w-[48%] rounded-[20px]">
+                <div class="roadmapContent w-full!">
+                  <div class="serial">
+                    <div class="serialNum">
+                      <span>5</span>
+                    </div>
+                    <div class="line lineFive"></div>
                   </div>
-                  <div class="line lineFive"></div>
+                  <h4>Journey Title will be here</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+                    ultricies eget amet faucibus diam. Dictum pharetra nisi donec
+                    neque ut mauris nulla eros.
+                  </p>
                 </div>
-                <h4>Journey Title will be here</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-                  ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-                  neque ut mauris nulla eros.
-                </p>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Roadmap Part End -->
+    </section>
+    <!-- Roadmap Part End -->
 
     <!--Our Students & Stories Part start-->
     <section class="py-20 lg:py-24 bg-[#050111] px-4 sm:px-6 lg:px-10">
@@ -1024,11 +860,10 @@
           Our Students
           <span class="bg-linear-to-r from-[#7F5CFF] to-[#4E95FF] bg-clip-text text-transparent italic">Shared Their Stories</span>
         </h2>
-        <p class="text-[#A9B0B8] font-Roboto text-lg max-w-2xl mx-auto mt-4">
+        <p class="text-[#A9B0B8] font-Roboto lg:text-[18px] text-sm max-w-2xl mx-auto mt-4">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
         </p>
       </div>
-
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         <!-- Card One -->
         <div class="bg-[#FDF5E6] flex flex-col sm:flex-row items-stretch rounded-3xl overflow-hidden p-3 min-h-75 sm:min-h-70">
@@ -1117,7 +952,7 @@
           <div
             class="lg:py-17.5 py-10 px-10 lg:px-15.75 bg-[url('/images/careerStart.png')] bg-center bg-cover bg-no-repeat border border-[#7451FD] rounded-[20px] relative z-50"
           >
-            <div class="flex flex-col lg:flex-row gap-y-8 justify-between">
+            <div class="flex flex-col lg:flex-row gap-y-8 justify-between xl:gap-x-10">
               <div class="left">
                 <h3
                   class="lg:text-[56px] text-[35px] lg:text-left text-center font-extrabold font-inter text-white"
@@ -1130,7 +965,7 @@
                   <h3 class="text-brand">Start Your Career</h3>
                 </div>
                 <p
-                  class="py-4 font-roboto text-[#A9B0B8] text-[18px] text-center lg:text-left lg:w-125.25"
+                  class="py-4 font-roboto text-[#A9B0B8] lg:text-[18px] text-sm text-center lg:text-left lg:w-125.25"
                 >
                   Lorem ipsum dolor sit amet consectetur. Orci est elit
                   tincidunt eu est at non suscipit. Felis posuere maecenas
@@ -1138,7 +973,7 @@
                   volutpat lobortis.
                 </p>
                 <div
-                  class="px-4 py-2.5 bg-[#FBFF8D] rounded-full lg:w-58 flex lg:justify-between gap-x-2 items-center"
+                  class="px-4 py-2.5 bg-[#FBFF8D] rounded-full mx-auto lg:mx-0 w-58 flex lg:justify-between gap-x-2 items-center"
                 >
                   <img src="images/siren.png" alt="siren.png" />
                   <p class="text-base font-medium font-roboto text-[#38435C]">
@@ -1146,14 +981,14 @@
                   </p>
                 </div>
                 <div class="pt-6">
-                  <img src="images/icons.png" alt="" />
+                  <img src="images/icons.png" alt="" class="mx-auto"/>
                 </div>
               </div>
               <!-- right side -->
               <div class="right">
                 <!-- input field -->
                 <div
-                  class="relative p-0.75 lg:w-115.25 rounded-[10px] overflow-hidden shadow-newShadow"
+                  class="relative p-0.75 w-full rounded-[10px] overflow-hidden shadow-newShadow"
                 >
                   <div
                     class="absolute inset-0 linearInput"
@@ -1280,17 +1115,19 @@
       <div
         class="bg-[url('/images/EDBImg.png')] py-40 bg-center bg-cover bg-no-repeat"
       >
-        <h3
-          class="lg:text-[56px] text-[30px] text-center font-extrabold font-Inter text-white mx-auto w-full lg:w-260.5"
-        >
-          Eye Catchy Web Development Banner
-        </h3>
+        <div class="max-w-container mx-auto text-center px-3">
+          <h3
+            class="xl:text-[56px] lg:text-[50px] text-[30px] text-center font-extrabold font-Inter text-white mx-auto w-full"
+          >
+            Eye Catchy Web Development Banner
+          </h3>
+        </div>
       </div>
     </section>
     <!-- Development Banner Part -->
 
     <!-- Faq part -->
-   <section class="lg:py-[120px] py-[50px] relative bg-[#050111]">
+    <section class="lg:py-[120px] py-[50px] relative bg-[#050111]">
       <!-- Container -->
       <!-- BG Image -->
       <img
@@ -1304,7 +1141,7 @@
         class="absolute bottom-20 right-40 hidden lg:block"
       />
       <!-- BG Image -->
-      <div class="lg:w-[1140px] mx-auto px-2 lg:px-0">
+      <div class="lg:max-w-container w-full mx-auto px-2 lg:px-0">
         <!-- Header -->
         <h3
           class="lg:text-[56px] text-[35px] font-extrabold text-center text-white"
@@ -1316,7 +1153,7 @@
           >
         </h3>
         <p
-          class="text-[#A9B0B8] lg:text-lg text-sm leading-[150%] text-center lg:w-[810px] w-full mx-auto pt-4 pb-8"
+          class="text-[#A9B0B8] lg:text-lg text-sm leading-[150%] text-center lg:w-[809px] mx-auto pt-4 pb-8"
         >
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
           at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
@@ -1431,7 +1268,7 @@
         <div
           class="bg-[#110f30] pt-16 pb-10 lg:rounded-tl-[100px] lg:rounded-tr-[100px]"
         >
-          <div class="container">
+          <div class="max-w-container mx-auto px-3">
             <div
               class="flex flex-col lg:flex-row items-center lg:justify-between lg:border-b border-[#7451FD] lg:pb-16 ml-6 lg:ml-0"
             >
@@ -1490,36 +1327,33 @@
               </div>
             </div>
             <!-- Compus location  -->
-            <div
-              class="flex flex-col lg:flex-row items-center md:justify-center lg:justify-between gap-y-5 lg:gap-y-0 mt-10 lg:my-16"
+<div
+              class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-20 mt-10 lg:my-16 items-start justify-items-center"
             >
-              <!-- Head Office - Main Campus  -->
-              <div class="text-center">
+              <div class="text-center w-full">
                 <h4 class="text-[#A9B0B8] text-base font-semibold font-roboto">
                   <i class="fa-solid fa-location-dot text-[#7451FD]"></i> Head
                   Office - Main Campus
                 </h4>
                 <p
-                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-54.75 sm:mx-auto lg:w-54.75 leading-[150%] mt-2"
+                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-full max-w-[220px] mx-auto leading-[150%] mt-2"
                 >
                   Momtaz Plaza, Dhanmondi, Dhaka +880 1777308777, +880
                   1624666000
                 </p>
               </div>
-              <!-- Campus 02 - Dhanmondi  -->
-              <div class="text-center">
+              <div class="text-center w-full">
                 <h4 class="text-[#A9B0B8] text-base font-semibold font-roboto">
                   <i class="fa-solid fa-location-dot text-[#7451FD]"></i> Campus
                   02 - Dhanmondi
                 </h4>
                 <p
-                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-54.75 sm:mx-auto lg:w-54.75 leading-[150%] mt-2"
+                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-full max-w-[220px] mx-auto leading-[150%] mt-2"
                 >
                   Meher Plaza, Dhanmondi, Dhaka +880 1625555444, +880 1990779782
                 </p>
               </div>
-              <!-- Mirpur Branch  -->
-              <div class="text-center">
+              <div class="text-center w-full">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1527,7 +1361,7 @@
                   Branch
                 </h4>
                 <p
-                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-58.5 sm:mx-auto lg:w-58.5 leading-[150%] mt-2"
+                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-full max-w-[235px] mx-auto leading-[150%] mt-2"
                 >
                   El Mercado, Dhaka 1216 <br />
                   +88013 100 100 27 , +880 1924 222 999
@@ -1535,10 +1369,9 @@
               </div>
             </div>
             <div
-              class="flex flex-col lg:flex-row gap-13.75 gap-y-5 mt-5 lg:mt-0 items-center"
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-x-4 mt-5 lg:mt-0 items-start"
             >
-              <!-- Uttara Branch  -->
-              <div class="text-center">
+              <div class="text-center w-full">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1546,14 +1379,14 @@
                   Branch
                 </h4>
                 <p
-                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-59.5 sm:mx-auto lg:w-59.5 leading-[150%] mt-2"
+                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-full max-w-60 mx-auto leading-[150%] mt-2"
                 >
                   RAJUK Razib Cosmo Shopping Complex Uttara, Dhaka-1230 +880
                   1990779827
                 </p>
               </div>
-              <!-- Chattogram Branch  -->
-              <div class="text-center">
+              <!-- ctg branch -->
+              <div class="text-center w-full">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1561,14 +1394,13 @@
                   Chattogram Branch
                 </h4>
                 <p
-                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-69.75 sm:mx-auto leading-[150%] mt-2"
+                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-full max-w-70 mx-auto leading-[150%] mt-2"
                 >
-                  9 No, Kapasgola Road Chawk Bazar, Chattogram +880 1847422965,
-                  +880 1847422968
+                  9 No, Kapasgola Road Chawk Bazar, Chattogram +880 1847422965,+880 1847422968
                 </p>
               </div>
-              <!-- Panchagarh Branch  -->
-              <div class="text-center">
+              <!-- panchagarh branch -->
+              <div class="text-center w-full">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1576,13 +1408,13 @@
                   Panchagarh Branch
                 </h4>
                 <p
-                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-48.5 sm:mx-auto lg:w-48.5 leading-[150%] mt-2"
+                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-full max-w-[200px] mx-auto leading-[150%] mt-2"
                 >
                   Abdul Aziz Super Market, Panchagarh Bazar, 01704048383
                 </p>
               </div>
-              <!-- Canada Branch  -->
-              <div class="text-center">
+              <!-- canada branch -->
+              <div class="text-center w-full">
                 <h4
                   class="text-[#A9B0B8] text-base font-semibold font-roboto text-center"
                 >
@@ -1590,7 +1422,7 @@
                   Branch
                 </h4>
                 <p
-                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-66 sm:mx-auto lg:w-66 leading-[150%] mt-2"
+                  class="text-[#6F7B88] text-[12px] font-medium font-inter w-full max-w-[265px] mx-auto leading-[150%] mt-2"
                 >
                   61 Lakewood Ave, Saint John, New Brunswick E2J 3N9, Canada +1
                   672-377-9977
