@@ -1536,6 +1536,11 @@
       gap: calc(var(--spacing) * 8);
     }
   }
+  .md\:bg-\[url\(\'\/images\/pVideo\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/images/pVideo.png');
+    }
+  }
   .md\:p-6 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 6);
@@ -1877,6 +1882,11 @@
     @media (width >= 64rem) {
       border-bottom-style: var(--tw-border-style);
       border-bottom-width: 1px;
+    }
+  }
+  .lg\:bg-\[url\(\'\/images\/pVideo\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('/images/pVideo.png');
     }
   }
   .lg\:px-0 {
