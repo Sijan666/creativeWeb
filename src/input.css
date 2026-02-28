@@ -17,12 +17,33 @@
   --shadow-newShadow: 0 4px 60px 0 rgba(72, 103, 255, 0.8);
 }
 
+
 @utility text-brand {
   background-image: var(--background-image-gradientNew);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
+/* animation linear bg */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.linearInput {
+  background: conic-gradient(from var(--angle), #35B1FF, #050111, #22c55e, #35B1FF);
+  animation: spinGradient 4s linear infinite;
+}
+
+@keyframes spinGradient {
+  to {
+    --angle: 360deg;
+  }
+}
+/* animation linear bg */
+
 
 /* Ashfak Maumud */
 /* ============= */
@@ -32,13 +53,17 @@
   @apply text-center border-b border-b-[#7451FD];
 }
 .heading h3 {
+<<<<<<< HEAD
   @apply text-white lg:text-[56px] text-[40px] font-inter font-extrabold leading-tight` mx-auto xl:w-208.75 w-full capitalize;
+=======
+  @apply text-white lg:text-[56px] text-[35px] font-inter font-extrabold leading-tight w-70 mx-auto md:w-208.75 lg:w-208.75 capitalize;
+>>>>>>> 11095e8ab793d08bf6b5d83f1679b75c53a505bb
 }
 .heading h3 span {
   @apply italic bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent;
 }
 .heading p {
-  @apply lg:w-202.5 mx-auto text-[#A9B0B8]  lg:text-[18px] text-base font-roboto pt-4 px-2 lg:px-0;
+  @apply lg:w-202.5 mx-auto text-[#A9B0B8] lg:text-lg text-sm font-roboto pt-4 px-2 lg:px-0;
 }
 /* Common End */
 
