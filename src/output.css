@@ -1981,6 +1981,11 @@
       line-height: 150%;
     }
   }
+  .xl\:w-79 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 79);
+    }
+  }
   .xl\:w-350 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 350);
@@ -1989,6 +1994,11 @@
   .xl\:w-full {
     @media (width >= 80rem) {
       width: 100%;
+    }
+  }
+  .xl\:w-xl {
+    @media (width >= 80rem) {
+      width: var(--container-xl);
     }
   }
   .xl\:grid-cols-3 {
