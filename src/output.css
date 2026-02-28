@@ -1819,6 +1819,11 @@
       column-gap: calc(var(--spacing) * 4);
     }
   }
+  .lg\:gap-x-10 {
+    @media (width >= 64rem) {
+      column-gap: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:gap-x-13 {
     @media (width >= 64rem) {
       column-gap: calc(var(--spacing) * 13);
