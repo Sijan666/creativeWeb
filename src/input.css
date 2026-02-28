@@ -53,7 +53,7 @@
   @apply text-center border-b border-b-[#7451FD];
 }
 .heading h3 {
-  @apply text-white lg:text-[56px] text-[40px] font-inter font-extrabold leading-tight` mx-auto xl:w-208.75 w-full capitalize;
+  @apply text-white lg:text-[56px] text-[40px] font-inter font-extrabold leading-tight mx-auto xl:w-208.75 w-full capitalize;
 }
 .heading h3 span {
   @apply italic bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent;
