@@ -1529,6 +1529,21 @@
       top: calc(var(--spacing) * 6);
     }
   }
+  .lg\:right-40 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:bottom-20 {
+    @media (width >= 64rem) {
+      bottom: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:left-40 {
+    @media (width >= 64rem) {
+      left: calc(var(--spacing) * 40);
+    }
+  }
   .lg\:z-0 {
     @media (width >= 64rem) {
       z-index: 0;
@@ -2013,6 +2028,26 @@
       line-height: 150%;
     }
   }
+  .xl\:right-40 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * 40);
+    }
+  }
+  .xl\:bottom-20 {
+    @media (width >= 80rem) {
+      bottom: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:left-40 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 40);
+    }
+  }
+  .xl\:block {
+    @media (width >= 80rem) {
+      display: block;
+    }
+  }
   .xl\:flex {
     @media (width >= 80rem) {
       display: flex;
@@ -2096,6 +2131,11 @@
   .xl\:gap-x-\[176px\] {
     @media (width >= 80rem) {
       column-gap: 176px;
+    }
+  }
+  .xl\:bg-\[url\(\'\/images\/pVideo\.png\'\)\] {
+    @media (width >= 80rem) {
+      background-image: url('/images/pVideo.png');
     }
   }
   .xl\:text-\[40px\] {
