@@ -38,7 +38,7 @@
   @apply italic bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent;
 }
 .heading p {
-  @apply lg:w-202.5 mx-auto text-[#A9B0B8] text-lg font-roboto pt-4 px-2 lg:px-0;
+  @apply lg:w-202.5 mx-auto text-[#A9B0B8]  lg:text-[18px] text-base font-roboto pt-4 px-2 lg:px-0;
 }
 /* Common End */
 
