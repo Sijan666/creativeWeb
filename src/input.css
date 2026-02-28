@@ -17,7 +17,6 @@
   --shadow-newShadow: 0 4px 60px 0 rgba(72, 103, 255, 0.8);
 }
 
-
 @utility text-brand {
   background-image: var(--background-image-gradientNew);
   -webkit-background-clip: text;
@@ -27,13 +26,19 @@
 
 /* animation linear bg */
 @property --angle {
-  syntax: '<angle>';
+  syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 
 .linearInput {
-  background: conic-gradient(from var(--angle), #35B1FF, #050111, #22c55e, #35B1FF);
+  background: conic-gradient(
+    from var(--angle),
+    #35b1ff,
+    #050111,
+    #22c55e,
+    #35b1ff
+  );
   animation: spinGradient 4s linear infinite;
 }
 
@@ -44,7 +49,6 @@
 }
 /* animation linear bg */
 
-
 /* Ashfak Maumud */
 /* ============= */
 /* Common Start */
@@ -53,7 +57,7 @@
   @apply text-center border-b border-b-[#7451FD];
 }
 .heading h3 {
-  @apply text-white lg:text-[56px] text-[40px] font-inter font-extrabold leading-tight` mx-auto xl:w-208.75 w-full capitalize;
+  @apply text-white lg:text-[56px] text-[40px] font-inter font-extrabold leading-tight mx-auto xl:w-208.75 w-full capitalize;
 }
 .heading h3 span {
   @apply italic bg-linear-to-r from-[#4E95FF] to-[#7F5CFF] bg-clip-text text-transparent;
