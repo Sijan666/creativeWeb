@@ -1550,6 +1550,11 @@
       width: calc(var(--spacing) * 151.75);
     }
   }
+  .lg\:w-200 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 200);
+    }
+  }
   .lg\:w-202\.5 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 202.5);
@@ -1563,6 +1568,11 @@
   .lg\:w-218 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 218);
+    }
+  }
+  .lg\:w-2000 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 2000);
     }
   }
   .lg\:w-\[31\%\] {
@@ -1711,6 +1721,11 @@
       padding-inline: calc(var(--spacing) * 3);
     }
   }
+  .lg\:px-4 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
   .lg\:px-10 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 10);
@@ -1849,9 +1864,19 @@
       display: block;
     }
   }
+  .xl\:w-66\.25 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 66.25);
+    }
+  }
   .xl\:w-115\.25 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 115.25);
+    }
+  }
+  .xl\:w-202\.25 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 202.25);
     }
   }
   .xl\:w-\[461px\] {
@@ -1862,6 +1887,16 @@
   .xl\:w-\[809px\] {
     @media (width >= 80rem) {
       width: 809px;
+    }
+  }
+  .xl\:w-container {
+    @media (width >= 80rem) {
+      width: var(--spacing-container);
+    }
+  }
+  .xl\:max-w-container {
+    @media (width >= 80rem) {
+      max-width: var(--spacing-container);
     }
   }
   .xl\:gap-20 {
@@ -1879,9 +1914,19 @@
       background-image: url('/images/pVideo.png');
     }
   }
+  .xl\:px-0 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
   .xl\:text-\[56px\] {
     @media (width >= 80rem) {
       font-size: 56px;
+    }
+  }
+  .\32 xl\:bg-\[url\(\'\/images\/pVideo\.png\'\)\] {
+    @media (width >= 96rem) {
+      background-image: url('/images/pVideo.png');
     }
   }
 }
