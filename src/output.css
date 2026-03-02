@@ -1488,6 +1488,11 @@
       width: calc(var(--spacing) * 20);
     }
   }
+  .lg\:w-50 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 50);
+    }
+  }
   .lg\:w-60 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 60);
@@ -1496,6 +1501,11 @@
   .lg\:w-65 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 65);
+    }
+  }
+  .lg\:w-66\.25 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 66.25);
     }
   }
   .lg\:w-70 {
