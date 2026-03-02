@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
+// course module
 // faq
 document.addEventListener("DOMContentLoaded", () => {
   const faqWrappers = document.querySelectorAll(
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
+// faq
 // dropdown
 const toggleBtn = document.getElementById("menu-toggle");
 const menu = document.getElementById("mobile-menu");
@@ -67,4 +67,4 @@ document.addEventListener("click", function (e) {
     menu.classList.add("opacity-0", "scale-95", "pointer-events-none");
   }
 });
-
+// dropdown
