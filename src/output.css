@@ -388,6 +388,12 @@
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
+  .w-76 {
+    width: calc(var(--spacing) * 76);
+  }
+  .w-76\.25 {
+    width: calc(var(--spacing) * 76.25);
+  }
   .w-\[60\%\] {
     width: 60%;
   }
@@ -872,6 +878,9 @@
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
   }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -1018,6 +1027,14 @@
   }
   .text-\[35px\] {
     font-size: 35px;
+  }
+  .leading-150 {
+    --tw-leading: calc(var(--spacing) * 150);
+    line-height: calc(var(--spacing) * 150);
+  }
+  .leading-\[12\%\] {
+    --tw-leading: 12%;
+    line-height: 12%;
   }
   .leading-\[120\%\] {
     --tw-leading: 120%;
@@ -1513,6 +1530,11 @@
       width: calc(var(--spacing) * 70);
     }
   }
+  .lg\:w-79 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 79);
+    }
+  }
   .lg\:w-82 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 82);
@@ -1684,6 +1706,11 @@
       padding-inline: calc(var(--spacing) * 0);
     }
   }
+  .lg\:px-3 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
   .lg\:px-10 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 10);
@@ -1692,6 +1719,11 @@
   .lg\:px-15\.75 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 15.75);
+    }
+  }
+  .lg\:py-2 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 2);
     }
   }
   .lg\:py-4 {
@@ -1815,6 +1847,11 @@
   .xl\:block {
     @media (width >= 80rem) {
       display: block;
+    }
+  }
+  .xl\:w-115\.25 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 115.25);
     }
   }
   .xl\:w-\[461px\] {
