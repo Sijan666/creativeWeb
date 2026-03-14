@@ -220,3 +220,17 @@
 /* Roadmap Part End */
 /* ============= */
 /* Ashfak Maumud */
+
+
+.gradient-box {
+  /* The core gradient */
+  background: linear-gradient(90deg, #7F5CFF 0%, #4E95FF 100%);
+  
+  /* Applying the 20% opacity shown in your Fill panel */
+  opacity: 0.2; 
+  
+  /* Layout basics */
+  width: 300px;
+  height: 100px;
+  border-radius: 8px; /* Optional, for a smoother look */
+}
